@@ -1,30 +1,40 @@
 # Места прохождения практики для студентов НГТУ
 <html>
- <head>
-  <meta charset="utf-8">
-  <title>Тег SELECT</title>
- </head>
+<head>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<!--
+<link rel="stylesheet" type="text/css" href="tmp.css" />
+-->
+<style type="text/css">
+.info {
+display: none;
+}
+.info.on {
+display: block;
+}
+</style>
+<script type="text/javascript">
+$(function (){
+    $('#map > a').click(function (){
+        var id=$(this).data('info');
+        $('#info > .on').removeClass('on');
+        $('#'+id).addClass('on');
+    });
+});
+</script>
+</head>
 <body>
-	
-	
-	
-	       <div id="dialog" title="Basic dialog">
-	       <form method='post' action='test.php'>
-	       <input type='text' name='renameFile'>
-                <input type='submit' value='Ok'>
-            </form>
-        </div>
-        <div><input type='button' value='форма'></div>
-        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-        <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
-        <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
-        <script>
-            var dialog = $("#dialog").dialog({autoOpen: false});
-            $("input[type=button]").click(function ()
-                {
-                dialog.dialog( "open" );
-                });
-        </script>
+<div id='map'>
+    <a href='#' data-info='itm1'>1</a>
+    <a href='#' data-info='itm2'>2</a>
+    <a href='#' data-info='itm3'>3</a>
+</div>
+<div id='info'>
+    <div class='info' id='itm1'>один</div>
+    <div class='info' id='itm2'>два</div>
+    <div class='info' id='itm3'>три</div>
+</div>
+  <meta charset="utf-8">
 	<select><option selected> Выберите тип сортировки компаний:</option>
 	<option>По наименованию факультета</option>
 	<option>По наименованию направления обучения</option>
