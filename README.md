@@ -8,7 +8,7 @@
 	
 	<select>
 	<option disabled Выберите тип сортировки компаний: value="1" selected</option>
-	<option label="По наименованию факультета">
+	<option label="По наименованию факультета"></option>
 	<option>По наименованию направления обучения</option>
 	
 	<form id="nubexForm" action="do.php">
