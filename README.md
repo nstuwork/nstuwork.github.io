@@ -4,16 +4,17 @@
   <meta charset="utf-8">
   <title>Тег SELECT</title>
  </head>
- <body>  
- 
-  <form action="select1.php" method="post">
-   <p><select size="1" multiple name="hero[]">
-    <option disabled>Выберите тип сортировки:</option>
-    <option value="По факультету и кафедре">По факультету и кафедре</option>
-    <option value="По направлению обучения">По направлению обучения</option>
-   </select></p>
-   <p><input type="submit" value="Отправить"></p>
-  </form>
-
- </body>
+<body>
+	
+	<form id="nubexForm" action="do.php">
+		<input type="submit" value="Отправить" />
+	</form>
+	
+	<select name="nubexSelect" size="3" multiple form="nubexForm">
+		<option>Электроник</option>
+		<option>Сыроежкин</option>
+		<option>Чижиков</option>
+		<option>Кукушкина</option>
+	</select>
+</body>
 </html>
