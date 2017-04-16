@@ -6,7 +6,7 @@
   <meta charset="utf-8">
 	<select><option selected> Выберите тип сортировки компаний:</option>
 	<option>По наименованию факультета</option>
-	<option>По наименованию направления обучения</option>
+	<option>По наименованию направления обучения</option></select>
 	<a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
   Link with href
 </a>
@@ -17,6 +17,5 @@
   <div class="well">
   </div>
 </div>
-</select>
 </body>
 </html>
