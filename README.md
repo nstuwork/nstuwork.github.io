@@ -10,7 +10,7 @@
    <p><select size="1" multiple name="hero[]">
     <option disabled>Выберите тип сортировки:</option>
     <option value="По факультету и кафедре">По факультету и кафедре</option>
-    <option selected value="По направлению обучения">По направлению обучения</option>
+    <option value="По направлению обучения">По направлению обучения</option>
    </select></p>
    <p><input type="submit" value="Отправить"></p>
   </form>
