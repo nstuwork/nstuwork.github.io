@@ -7,9 +7,7 @@
 <body>
 	
 	
-	<select><option selected> Выберите тип сортировки компаний:</option>
-	<option>По наименованию факультета</option>
-	<option>По наименованию направления обучения</option>
+	
 	       <div id="dialog" title="Basic dialog">
 	       <form method='post' action='test.php'>
 	       <input type='text' name='renameFile'>
@@ -27,8 +25,9 @@
                 dialog.dialog( "open" );
                 });
         </script>
-
-	
+	<select><option selected> Выберите тип сортировки компаний:</option>
+	<option>По наименованию факультета</option>
+	<option>По наименованию направления обучения</option>
 </select>
 </body>
 </html>
