@@ -7,13 +7,10 @@
 <body>
 	
 	
-	<select><option disabled> Выберите тип сортировки компаний:</option>
+	<select><option selected disabled> Выберите тип сортировки компаний:</option>
 	<option>По наименованию факультета</option>
 	<option>По наименованию направления обучения</option>
 	
-	<form id="nubexForm" action="do.php">
-		<input type="submit" value="Отправить" />
-	</form>
 </select>
 </body>
 </html>
