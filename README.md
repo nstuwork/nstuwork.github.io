@@ -24,6 +24,11 @@ $(function (){
 </script>
 </head>
 <body>
+  <meta charset="utf-8">
+	<select><option selected> Выберите тип сортировки компаний:</option>
+	<option>По наименованию факультета</option>
+	<option>По наименованию направления обучения</option>
+</select>
 <div id='map'>
     <a href='#' data-info='itm1'>1</a>
     <a href='#' data-info='itm2'>2</a>
@@ -34,10 +39,5 @@ $(function (){
     <div class='info' id='itm2'>два</div>
     <div class='info' id='itm3'>три</div>
 </div>
-  <meta charset="utf-8">
-	<select><option selected> Выберите тип сортировки компаний:</option>
-	<option>По наименованию факультета</option>
-	<option>По наименованию направления обучения</option>
-</select>
 </body>
 </html>
