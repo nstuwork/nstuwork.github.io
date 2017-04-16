@@ -11,7 +11,7 @@
 	</form>
 	
 	<select>
-	<option" value="1" selected>Выберите тип сортировки компаний:</option>
+	<option disabled> Выберите тип сортировки компаний:</option>
 	<option>По наименованию факультета:</option>
 	<option>По наименованию направления обучения:</option>
 </select>
