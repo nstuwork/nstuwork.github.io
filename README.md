@@ -1,5 +1,4 @@
-# nstuwork.github.io
-<!DOCTYPE HTML>
+# Места прохождения практики для студентов НГТУ
 <html>
  <head>
   <meta charset="utf-8">
@@ -8,7 +7,7 @@
  <body>  
  
   <form action="select1.php" method="post">
-   <p><select size="3" multiple name="hero[]">
+   <p><select size="1" multiple name="hero[]">
     <option disabled>Выберите тип сортировки:</option>
     <option value="По факультету и кафедре">По факультету и кафедре</option>
     <option selected value="По направлению обучения">По направлению обучения</option>
