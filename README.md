@@ -11,10 +11,9 @@
 	</form>
 	
 	<select>
-	<option label="Электроник" value="1" selected>Господин Электроник</option>
-	<option>Сыроежкин</option>
-	<option disabled>Чижиков</option>
-	<option>Кукушкина</option>
+	<option disabled>Выберите тип сортировки компаний:</option>
+	<option>По наименованию факультета:</option>
+	<option>По наименованию направления обучения:</option>
 </select>
 </body>
 </html>
