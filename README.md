@@ -10,11 +10,11 @@
 		<input type="submit" value="Отправить" />
 	</form>
 	
-	<select name="nubexSelect" size="3" multiple form="nubexForm">
-		<option>Электроник</option>
-		<option>Сыроежкин</option>
-		<option>Чижиков</option>
-		<option>Кукушкина</option>
-	</select>
+	<select>
+	<option label="Электроник" value="1" selected>Господин Электроник</option>
+	<option>Сыроежкин</option>
+	<option disabled>Чижиков</option>
+	<option>Кукушкина</option>
+</select>
 </body>
 </html>
