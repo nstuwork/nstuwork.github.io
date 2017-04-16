@@ -1,5 +1,4 @@
 # Места прохождения практики для студентов НГТУ
-<!DOCTYPE html>
 <html>
 <head>
 <script src="http://code.jquery.com/jquery-latest.js"></script>
