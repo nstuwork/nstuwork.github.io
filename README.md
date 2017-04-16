@@ -9,11 +9,9 @@
  
   <form action="select1.php" method="post">
    <p><select size="3" multiple name="hero[]">
-    <option disabled>Выберите героя</option>
-    <option value="Чебурашка">Чебурашка</option>
-    <option selected value="Крокодил Гена">Крокодил Гена</option>
-    <option value="Шапокляк">Шапокляк</option>
-    <option value="Крыса Лариса">Крыса Лариса</option>
+    <option disabled>Выберите тип сортировки:</option>
+    <option value="По факультету и кафедре">По факультету и кафедре</option>
+    <option selected value="По направлению обучения">По направлению обучения</option>
    </select></p>
    <p><input type="submit" value="Отправить"></p>
   </form>
