@@ -59,14 +59,12 @@
  			<div id="window">
  						
  						 <!-- Картинка крестика-->
- 				<img class="close" onclick="show('none')" src="http://sergey-oganesyan.ru/wp-content/uploads/2014/01/close.png">
+ 				<img class="close" onclick="show('none')" src="https://image.flaticon.com/icons/svg/196/196271.svg">
  					
  						<!-- Картинка ipad'a-->
  				<img  style="margin: 20px 0 0 50px;" src="http://sergey-oganesyan.ru/wp-content/uploads/2014/01/ipad.png">
  				
- 			</div>
- 
- 		<center><button class="myButton" onclick="show('block')">Показать окно</button></center>	
+ 			</div>	
     <meta charset="utf-8">
 <p>Выберите тип сортировки компаний:</p>
 	<left><button class="myButton" onclick="show('block')">По наименованию факультета</button></left>
