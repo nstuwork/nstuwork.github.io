@@ -17,11 +17,11 @@
  		z-index: 100;
  		overflow: auto;
  	}
- 	
- 	#window{
+	
+ 	#window1{
  		width: 717px;
  		height: 538px;
- 		margin: 50px auto;
+ 		margin: 150px auto;
  		display: none;
  		background: #fff;
  		z-index: 200;
@@ -31,8 +31,8 @@
  		top: 0;
  		bottom: 0;
  		padding: 16px;
-		border-radius: 50px;
  	}
+ 	
 	#window2{
  		width: 717px;
  		height: 538px;
@@ -63,10 +63,9 @@
  		<script type="text/javascript">
  
  					//Функция показа
- 			function show(state){
+ 			function show1(state){
  
- 					document.getElementById('window').style.display = state;			
- 					document.getElementById('wrap').style.display = state; 			
+ 					document.getElementById('window1').style.display = state;					
  			}
 			function show2(state){
  
@@ -74,16 +73,9 @@
  			}
  			
  		</script>
- 					<!-- Задний прозрачный фон-->
- 		<div onclick="show('none')" id="wrap"></div>
- 
- 					<!-- Само окно-->
- 			<div id="window">
-			<left><button type="submit" onclick="show('none');show2('block')">АВТФ</button></left>
- 						
- 						 <!-- Картинка крестика-->
- 				<img class="close" onclick="show('none')" src="https://image.flaticon.com/icons/svg/159/159691.svg">
- 			</div>	
+ 			<div id="window1">
+			123
+			</div>		
 			<div id="window2">
 			123
 			</div>
