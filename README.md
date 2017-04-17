@@ -3,6 +3,7 @@
 <head>
 <meta http-equiv='Content-Type' content='text/html; charset=utf8'>
 <link rel="stylesheet" href="http://sergey-oganesyan.ru/wp-content/uploads/2014/01/stylepromer.css" type="text/css" />
+-<title>Всплывающее окно на javascript - Seo блог sergey-oganesyan.ru</title>
 <style type="text/css">
 	
 	#wrap{
