@@ -107,6 +107,7 @@
  		</script>
  			<div id="window1">
 			<div class="column">
+			<left>
 			<p><a href="tip.html">АВТФ</a></p>
 			<p><a href="tip.html">ИСТР</a></p>
 			<p><a href="tip.html">МТФ</a></p>
@@ -118,10 +119,11 @@
 			<p><a href="tip.html">ФТФ</a></p>
 			<p><a href="tip.html">ФЭН</a></p>
 			<p><a href="tip.html">ЮФ</a></p>
+			</left>
 			</div>	
 			</div>
 			<div id="window2">
-			<div class="column">
+			<div class="column"><left>
 			<p><a href="tip.html">ИТ</a></p>
 			<p><a href="tip.html">Иностранные языки</a></p>
 			<p><a href="tip.html">Маркетинг</a></p>
@@ -140,7 +142,7 @@
 			<p><a href="tip.html">Экономика</a></p>
 			<p><a href="tip.html">Электротехнологические установки</a></p>
 			<p><a href="tip.html">Электроэнергетика и теплоэнергетика</a></p>
-			<p><a href="tip.html">Юриспруденция</a></p>
+			<p><a href="tip.html">Юриспруденция</a></p></left>
 			</div>
 			</div>
     <meta charset="utf-8">
