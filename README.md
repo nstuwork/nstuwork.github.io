@@ -69,8 +69,9 @@
  -					<a href="http://sergey-oganesyan.ru/javascript-s-primerami/kak-sdelat-vsplyvayushee-okno.html" class="myButton">Вернуться к статье</a> 
  -					<a class="myButton" href="http://sergey-oganesyan.ru/">sergey-oganesyan.ru</a>
  +				<center>
- </div>			
-		<center><button class="myButton" onclick="show('block')">Показать окно</button></center>	
+ 
+		<center><button class="myButton" onclick="show('block')">Показать окно</button></center>
+		</div>
   <meta charset="utf-8">
 <select><option selected> Выберите тип сортировки компаний:</option>
 <option>По наименованию факультета</option>
