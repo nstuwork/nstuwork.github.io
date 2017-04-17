@@ -34,7 +34,7 @@
  	}
  	
  	.close{
- 		margin-left: 720px;
+ 		margin-left: 620px;
  		margin-top: 4px;
 		width: 30px;
  		height: 30px;
