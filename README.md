@@ -1,4 +1,4 @@
-<center># Места прохождения практики для студентов НГТУ</center>
+<center> <h1>Места прохождения практики для студентов НГТУ</h1></center>
  <html>
  <head>
  <meta http-equiv='Content-Type' content='text/html; charset=utf8'>
