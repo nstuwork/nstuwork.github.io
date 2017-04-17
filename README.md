@@ -93,7 +93,7 @@
  			
  		</script>
  			<div id="window1">
-			<p><a onclick="show3('block')">АВТФ</a></p>
+			<p><a href="tip.html">АВТФ</a></p>
 			<p><a href="tip.html">ИСТР</a></p>
 			<p><a href="tip.html">МТФ</a></p>
 			<p><a href="tip.html">РЭФ</a></p>
