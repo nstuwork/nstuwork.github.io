@@ -55,17 +55,6 @@
  		cursor: pointer;
  	}
 	
-	class="myButton2"
-	{  display: inline-block;
-  font-size: 12px;
-  color: none;
-  text-decoration: none;
-  padding: none;
-  outline: none;
-  border-right: 0px;
-  border-top: 0px;
-  background-color:none;
-	}
  
  	
  </style>
@@ -90,7 +79,7 @@
  
  					<!-- Само окно-->
  			<div id="window">
-			<left><button class="myButton2" onclick="show('none');show2('block')">АВТФ</button></left>
+			<left><button type="submit" onclick="show('none');show2('block')">АВТФ</button></left>
  						
  						 <!-- Картинка крестика-->
  				<img class="close" onclick="show('none')" src="https://image.flaticon.com/icons/svg/159/159691.svg">
