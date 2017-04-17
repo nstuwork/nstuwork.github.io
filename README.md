@@ -70,7 +70,7 @@
     <meta charset="utf-8">
   <select><option selected> Выберите тип сортировки компаний:</option>
   <option>По наименованию факультета</option>
-  <option>По наименованию направления обучения</option></select>
+  <option>По наименованию направления обучения</option>
   <option class="myButton" onclick="show('block')">Показать окно</option></select>
   </body>
   </html>
