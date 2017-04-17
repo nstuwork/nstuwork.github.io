@@ -4,7 +4,7 @@
 <head>
 <meta http-equiv='Content-Type' content='text/html; charset=utf8'>
 <link rel="stylesheet" href="http://sergey-oganesyan.ru/wp-content/uploads/2014/01/stylepromer.css" type="text/css" />
-<title>Р’СЃРїР»С‹РІР°СЋС‰РµРµ РѕРєРЅРѕ РЅР° javascript - Seo Р±Р»РѕРі sergey-oganesyan.ru</title>
+<title>Всплывающее окно на javascript - Seo блог sergey-oganesyan.ru</title>
 <style type="text/css">
 	
 	#wrap{
@@ -45,14 +45,9 @@
 </style>
 </head>
 <body>
-  <meta charset="utf-8">
-<select><option selected> Выберите тип сортировки компаний:</option>
-<option>По наименованию факультета</option>
-<option>По наименованию направления обучения</option></select>
-<html>
 		<script type="text/javascript">
 
-					//Р¤СѓРЅРєС†РёСЏ РїРѕРєР°Р·Р°
+					//Функция показа
 			function show(state){
 
 					document.getElementById('window').style.display = state;			
@@ -60,35 +55,35 @@
 			}
 			
 		</script>
-					<!-- Р—Р°РґРЅРёР№ РїСЂРѕР·СЂР°С‡РЅС‹Р№ С„РѕРЅ-->
+					<!-- Задний прозрачный фон-->
 		<div onclick="show('none')" id="wrap"></div>
 
-					<!-- РЎР°РјРѕ РѕРєРЅРѕ-->
+					<!-- Само окно-->
 			<div id="window">
 						
-						 <!-- РљР°СЂС‚РёРЅРєР° РєСЂРµСЃС‚РёРєР°-->
+						 <!-- Картинка крестика-->
 				<img class="close" onclick="show('none')" src="http://sergey-oganesyan.ru/wp-content/uploads/2014/01/close.png">
 					
-						<!-- РљР°СЂС‚РёРЅРєР° ipad'a-->
+						<!-- Картинка ipad'a-->
 				<img  style="margin: 20px 0 0 50px;" src="http://sergey-oganesyan.ru/wp-content/uploads/2014/01/ipad.png">
 				
 				<center>
 							
-					<a href="http://sergey-oganesyan.ru/javascript-s-primerami/kak-sdelat-vsplyvayushee-okno.html" class="myButton">Р’РµСЂРЅСѓС‚СЊСЃСЏ Рє СЃС‚Р°С‚СЊРµ</a> 
+					<a href="http://sergey-oganesyan.ru/javascript-s-primerami/kak-sdelat-vsplyvayushee-okno.html" class="myButton">Вернуться к статье</a> 
 					<a class="myButton" href="http://sergey-oganesyan.ru/">sergey-oganesyan.ru</a>
 				</center>
 				
 			</div>
 
-		<center><button class="myButton" onclick="show('block')">РџРѕРєР°Р·Р°С‚СЊ РѕРєРЅРѕ</button></center>	
+		<center><button class="myButton" onclick="show('block')">Показать окно</button></center>	
 		
 		<center><br>
-			<a href="http://sergey-oganesyan.ru/javascript-s-primerami/kak-sdelat-vsplyvayushee-okno.html" class="myButton">Р’РµСЂРЅСѓС‚СЊСЃСЏ Рє СЃС‚Р°С‚СЊРµ</a> 
+			<a href="http://sergey-oganesyan.ru/javascript-s-primerami/kak-sdelat-vsplyvayushee-okno.html" class="myButton">Вернуться к статье</a> 
 			<a class="myButton" href="http://sergey-oganesyan.ru/">sergey-oganesyan.ru</a>
-		</center>
-		
-</body>
-</html>
-</style>
+	        </center>
+  <meta charset="utf-8">
+<select><option selected> Выберите тип сортировки компаний:</option>
+<option>По наименованию факультета</option>
+<option>По наименованию направления обучения</option></select>
 </body>
 </html>
