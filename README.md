@@ -58,7 +58,7 @@
 	class="myButton2"
 	{  display: inline-block;
   font-size: 12px;
-  color: rgb(205,216,228);
+  color: none;
   text-decoration: none;
   padding: none;
   outline: none;
