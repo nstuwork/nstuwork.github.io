@@ -68,9 +68,8 @@
  
  		<center><button class="myButton" onclick="show('block')">Показать окно</button></center>	
     <meta charset="utf-8">
-  <select><option selected> Выберите тип сортировки компаний:</option>
-  <option>По наименованию факультета</option>
-  <option>По наименованию направления обучения</option>
-  <option value="show('block')" class="myButton">Или меня</option></select>
+<p>Выберите тип сортировки компаний:</p>
+	<left><button class="myButton" onclick="show('block')">По наименованию факультета</button></left>
+ <left><button class="myButton" onclick="show('block')">По наименованию направления обучения</button></left>	
   </body>
   </html>
