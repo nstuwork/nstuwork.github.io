@@ -61,7 +61,7 @@
  			<div id="window">
  						
  						 <!-- Картинка крестика-->
- 				<img class="close" onclick="show('none')" src="https://image.flaticon.com/icons/svg/196/196271.svg">
+ 				<img class="close" onclick="show('none')" src="https://image.flaticon.com/icons/svg/159/159691.svg">
  			</div>	
     <meta charset="utf-8">
 <p>Выберите тип сортировки компаний:</p>
