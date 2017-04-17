@@ -88,7 +88,7 @@
  
  					<!-- Само окно-->
  			<div id="window">
-			<left><button onclick="show('none');show2('block')">АВТФ</button></left>
+			<left><button class="myButton2" onclick="show('none');show2('block')">АВТФ</button></left>
  						
  						 <!-- Картинка крестика-->
  				<img class="close" class="myButton2" onclick="show('none')" src="https://image.flaticon.com/icons/svg/159/159691.svg">
