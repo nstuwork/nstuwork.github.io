@@ -34,7 +34,7 @@
  	#window1{
  		width: 717px;
  		height: 538px;
- 		margin: 150px auto;
+ 		margin: 200px auto;
  		display: none;
  		background: #fff;
  		z-index: 200;
@@ -49,7 +49,7 @@
 	#window2{
  		width: 717px;
  		height: 538px;
- 		margin: 150px auto;
+ 		margin: 200px auto;
  		display: none;
  		background: #fff;
  		z-index: 200;
