@@ -71,5 +71,6 @@
   <select><option selected> Выберите тип сортировки компаний:</option>
   <option>По наименованию факультета</option>
   <option>По наименованию направления обучения</option></select>
+  <option class="myButton" onclick="show('block')">Показать окно</option></select>
   </body>
   </html>
