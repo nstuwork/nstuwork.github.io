@@ -31,6 +31,7 @@
  		top: 0;
  		bottom: 0;
  		padding: 16px;
+		border-radius: 50px;
  	}
  	
  	.close{
