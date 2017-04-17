@@ -33,7 +33,21 @@
  		padding: 16px;
 		border-radius: 50px;
  	}
- 	
+	#window2{
+ 		width: 717px;
+ 		height: 538px;
+ 		margin: 100px auto;
+ 		display: none;
+ 		background: #fff;
+ 		z-index: 200;
+ 		position: fixed;
+ 		left: 0;
+ 		right: 0;
+ 		top: 0;
+ 		bottom: 0;
+ 		padding: 16px;
+		border-radius: 50px;
+ 	}
  	.close{
  		margin-left: 647px;
  		margin-top: 4px;
@@ -53,6 +67,10 @@
  					document.getElementById('window').style.display = state;			
  					document.getElementById('wrap').style.display = state; 			
  			}
+			function show2(state){
+ 
+ 					document.getElementById('window2').style.display = state;					
+ 			}
  			
  		</script>
  					<!-- Задний прозрачный фон-->
@@ -60,6 +78,7 @@
  
  					<!-- Само окно-->
  			<div id="window">
+			<button class="myButton" onclick="show('none') onclick="show2('block')">1</button>
  						
  						 <!-- Картинка крестика-->
  				<img class="close" onclick="show('none')" src="https://image.flaticon.com/icons/svg/159/159691.svg">
