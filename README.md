@@ -72,5 +72,6 @@
   <option>По наименованию факультета</option>
   <option>По наименованию направления обучения</option>
   <option class="myButton" onclick="show('block')">Показать окно</option></select>
+  <option value="onclick=show('block')"> Крокодил Гена</option>
   </body>
   </html>
