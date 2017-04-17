@@ -7,7 +7,6 @@
   <style type="text/css">
   	
   	#wrap{
- @@ -66,12 +65,7 @@
   						<!-- Картинка ipad'a-->
   				<img  style="margin: 20px 0 0 50px;" src="http://sergey-oganesyan.ru/wp-content/uploads/2014/01/ipad.png">
   				
