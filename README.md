@@ -3,7 +3,20 @@
  <head>
  <meta http-equiv='Content-Type' content='text/html; charset=utf8'>
  <style type="text/css">
- 	
+ 	.column {
+    -webkit-column-width: 200px;
+    -moz-column-width: 200px;
+    column-width: 200px;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    -webkit-column-rule: 1px solid #ccc;
+    -moz-column-rule: 1px solid #ccc;
+    column-rule: 1px solid #ccc;
+   }
  	#wrap{
  		display: none;
  		opacity: 0.8;
@@ -93,6 +106,7 @@
  			
  		</script>
  			<div id="window1">
+			<div class="column">
 			<p><a href="tip.html">АВТФ</a></p>
 			<p><a href="tip.html">ИСТР</a></p>
 			<p><a href="tip.html">МТФ</a></p>
@@ -104,8 +118,10 @@
 			<p><a href="tip.html">ФТФ</a></p>
 			<p><a href="tip.html">ФЭН</a></p>
 			<p><a href="tip.html">ЮФ</a></p>
-			</div>		
+			</div>	
+			</div>
 			<div id="window2">
+			<div class="column">
 			<p><a href="tip.html">ИТ</a></p>
 			<p><a href="tip.html">Иностранные языки</a></p>
 			<p><a href="tip.html">Маркетинг</a></p>
@@ -125,6 +141,7 @@
 			<p><a href="tip.html">Электротехнологические установки</a></p>
 			<p><a href="tip.html">Электроэнергетика и теплоэнергетика</a></p>
 			<p><a href="tip.html">Юриспруденция</a></p>
+			</div>
 			</div>
     <meta charset="utf-8">
 <p>Выберите тип сортировки компаний:</p>
