@@ -47,6 +47,21 @@
  		bottom: 0;
  		padding: 16px;
  	}
+	
+	#window3{
+ 		width: 400px;
+ 		height: 400px;
+ 		margin: 150px auto;
+ 		display: none;
+ 		background: blue;
+ 		z-index: 200;
+ 		position: fixed;
+ 		left: 0;
+ 		right: 0;
+ 		top: 0;
+ 		bottom: 0;
+ 		padding: 16px;
+ 	}
 		.close{
  		margin-left: 647px;
  		margin-top: 4px;
@@ -71,10 +86,14 @@
  
  					document.getElementById('window2').style.display = state;					
  			}
+			function show3(state){
+ 
+ 					document.getElementById('window3').style.display = state;					
+ 			}
  			
  		</script>
  			<div id="window1">
-			<p><a href="tip.html">АВТФ</a></p>
+			<p><a onclick="show3('block')">АВТФ</a></p>
 			<p><a href="tip.html">ИСТР</a></p>
 			<p><a href="tip.html">МТФ</a></p>
 			<p><a href="tip.html">РЭФ</a></p>
