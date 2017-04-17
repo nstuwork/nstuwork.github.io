@@ -36,7 +36,7 @@
 	#window2{
  		width: 717px;
  		height: 538px;
- 		margin: 100px auto;
+ 		margin: 150px auto;
  		display: none;
  		background: #fff;
  		z-index: 200;
@@ -46,7 +46,6 @@
  		top: 0;
  		bottom: 0;
  		padding: 16px;
-		border-radius: 50px;
  	}
  	.close{
  		margin-left: 647px;
@@ -78,7 +77,7 @@
  
  					<!-- Само окно-->
  			<div id="window">
-			<left><button class="myButton" onclick="show('none');show2('block')">1</button></left>
+			<left><button onclick="show('none');show2('block')">АВТФ</button></left>
  						
  						 <!-- Картинка крестика-->
  				<img class="close" onclick="show('none')" src="https://image.flaticon.com/icons/svg/159/159691.svg">
