@@ -66,12 +66,6 @@
  						<!-- Картинка ipad'a-->
  				<img  style="margin: 20px 0 0 50px;" src="http://sergey-oganesyan.ru/wp-content/uploads/2014/01/ipad.png">
  				
- 				<center>
- 							
- 					<a href="http://sergey-oganesyan.ru/javascript-s-primerami/kak-sdelat-vsplyvayushee-okno.html" class="myButton">Вернуться к статье</a> 
- 					<a class="myButton" href="http://sergey-oganesyan.ru/">sergey-oganesyan.ru</a>
- 				</center>
- 				
  			</div>
  
  		<center><button class="myButton" onclick="show('block')">Показать окно</button></center>	
