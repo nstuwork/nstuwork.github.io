@@ -47,6 +47,17 @@
  		bottom: 0;
  		padding: 16px;
  	}
+	class="myButton2"
+	{  display: inline-block;
+  font-size: 12px;
+  color: rgb(205,216,228);
+  text-decoration: none;
+  padding: .2em .8em;
+  outline: none;
+  border-right: 0px;
+  border-top: 0px;
+  background-color:none;
+	}
  	.close{
  		margin-left: 647px;
  		margin-top: 4px;
@@ -80,7 +91,7 @@
 			<left><button onclick="show('none');show2('block')">АВТФ</button></left>
  						
  						 <!-- Картинка крестика-->
- 				<img class="close" onclick="show('none')" src="https://image.flaticon.com/icons/svg/159/159691.svg">
+ 				<img class="close" class="myButton2" onclick="show('none')" src="https://image.flaticon.com/icons/svg/159/159691.svg">
  			</div>	
 			<div id="window2">
 			123
