@@ -78,11 +78,14 @@
  
  					<!-- Само окно-->
  			<div id="window">
-			<button class="myButton" onclick="show('none') onclick="show2('block')">1</button>
+			<left><button class="myButton" onclick="show('none');show2('block')">1</button></left>
  						
  						 <!-- Картинка крестика-->
  				<img class="close" onclick="show('none')" src="https://image.flaticon.com/icons/svg/159/159691.svg">
  			</div>	
+			<div id="window2">
+			123
+			</div>
     <meta charset="utf-8">
 <p>Выберите тип сортировки компаний:</p>
 	<left><button class="myButton" onclick="show('block')">По наименованию факультета</button></left>
