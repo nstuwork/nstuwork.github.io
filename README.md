@@ -36,6 +36,8 @@
  	.close{
  		margin-left: 364px;
  		margin-top: 4px;
+		width: 30px;
+ 		height: 30px;
  		cursor: pointer;
  	}
  	
