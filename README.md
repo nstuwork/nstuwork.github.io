@@ -60,7 +60,7 @@
   font-size: 12px;
   color: rgb(205,216,228);
   text-decoration: none;
-  padding: .2em .8em;
+  padding: none;
   outline: none;
   border-right: 0px;
   border-top: 0px;
@@ -93,7 +93,7 @@
 			<left><button class="myButton2" onclick="show('none');show2('block')">АВТФ</button></left>
  						
  						 <!-- Картинка крестика-->
- 				<img class="close"  onclick="show('none')" src="https://image.flaticon.com/icons/svg/159/159691.svg">
+ 				<img class="close" onclick="show('none')" src="https://image.flaticon.com/icons/svg/159/159691.svg">
  			</div>	
 			<div id="window2">
 			123
