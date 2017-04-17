@@ -86,7 +86,8 @@
 			<p><a href="tip.html">ФЭН</a></p>
 			<p><a href="tip.html">ЮФ</a></p>
 			</div>		
-			<div id="window2">ИТ</a></p>
+			<div id="window2">
+			<p><a href="tip.html">ИТ</a></p>
 			<p><a href="tip.html">Иностранные языки</a></p>
 			<p><a href="tip.html">Маркетинг</a></p>
 			<p><a href="tip.html">Материаловедение</a></p>
