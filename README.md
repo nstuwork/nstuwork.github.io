@@ -74,10 +74,37 @@
  			
  		</script>
  			<div id="window1">
-			123
+			<p><a href="tip.html">АВТФ</a></p>
+			<p><a href="tip.html">ИСТР</a></p>
+			<p><a href="tip.html">МТФ</a></p>
+			<p><a href="tip.html">РЭФ</a></p>
+			<p><a href="tip.html">ФБ</a></p>
+			<p><a href="tip.html">ФЛА</a></p>
+			<p><a href="tip.html">ФМА</a></p>
+			<p><a href="tip.html">ФПМИ</a></p>
+			<p><a href="tip.html">ФТФ</a></p>
+			<p><a href="tip.html">ФЭН</a></p>
+			<p><a href="tip.html">ЮФ</a></p>
 			</div>		
-			<div id="window2">
-			123
+			<div id="window2">ИТ</a></p>
+			<p><a href="tip.html">Иностранные языки</a></p>
+			<p><a href="tip.html">Маркетинг</a></p>
+			<p><a href="tip.html">Материаловедение</a></p>
+			<p><a href="tip.html">Менеджмент</a></p>
+			<p><a href="tip.html">Проектирование технологических машин</a></p>
+			<p><a href="tip.html">Психология и педогогика</a></p>
+			<p><a href="tip.html">Менеджмент</a></p>
+			<p><a href="tip.html">Работа в социальной сфере</a></p>
+			<p><a href="tip.html">Радиотехника и электроника</a></p>
+			<p><a href="tip.html">Регионоведение</a></p>
+			<p><a href="tip.html">Самолето- и вертолетостроение</a></p>
+			<p><a href="tip.html">Системы упрвления, боеприпасы и взрыватели (ФЛА)</a></p>
+			<p><a href="tip.html">Химия</a></p>
+			<p><a href="tip.html">Экология</a></p>
+			<p><a href="tip.html">Экономика</a></p>
+			<p><a href="tip.html">Электротехнологические установки</a></p>
+			<p><a href="tip.html">Электроэнергетика и теплоэнергетика</a></p>
+			<p><a href="tip.html">Юриспруденция</a></p>
 			</div>
     <meta charset="utf-8">
 <p>Выберите тип сортировки компаний:</p>
