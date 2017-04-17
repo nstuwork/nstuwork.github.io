@@ -19,8 +19,8 @@
  	}
  	
  	#window{
- 		width: 400px;
- 		height: 400px;
+ 		width: 717px;
+ 		height: 538px;
  		margin: 50px auto;
  		display: none;
  		background: #fff;
