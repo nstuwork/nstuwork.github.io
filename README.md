@@ -1,5 +1,4 @@
 # Места прохождения практики для студентов НГТУ
-<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN' 'http://www.w3.org/TR/html4/loose.dtd'>
 <html>
 <head>
 <meta http-equiv='Content-Type' content='text/html; charset=utf8'>
@@ -76,11 +75,6 @@
 			</div>
 
 		<center><button class="myButton" onclick="show('block')">Показать окно</button></center>	
-		
-		<center><br>
-			<a href="http://sergey-oganesyan.ru/javascript-s-primerami/kak-sdelat-vsplyvayushee-okno.html" class="myButton">Вернуться к статье</a> 
-			<a class="myButton" href="http://sergey-oganesyan.ru/">sergey-oganesyan.ru</a>
-	        </center>
   <meta charset="utf-8">
 <select><option selected> Выберите тип сортировки компаний:</option>
 <option>По наименованию факультета</option>
