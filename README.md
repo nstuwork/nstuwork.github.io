@@ -1,4 +1,4 @@
-# Места прохождения практики для студентов НГТУ
+<center># Места прохождения практики для студентов НГТУ</center>
  <html>
  <head>
  <meta http-equiv='Content-Type' content='text/html; charset=utf8'>
@@ -107,7 +107,7 @@
  		</script>
  			<div id="window1">
 			<div class="column">
-			<left>
+			<center>
 			<p><a href="tip.html">АВТФ</a></p>
 			<p><a href="tip.html">ИСТР</a></p>
 			<p><a href="tip.html">МТФ</a></p>
@@ -119,11 +119,12 @@
 			<p><a href="tip.html">ФТФ</a></p>
 			<p><a href="tip.html">ФЭН</a></p>
 			<p><a href="tip.html">ЮФ</a></p>
-			</left>
+			</center>
 			</div>	
 			</div>
 			<div id="window2">
-			<div class="column"><left>
+			<div class="column">
+			<center>
 			<p><a href="tip.html">ИТ</a></p>
 			<p><a href="tip.html">Иностранные языки</a></p>
 			<p><a href="tip.html">Маркетинг</a></p>
@@ -142,12 +143,13 @@
 			<p><a href="tip.html">Экономика</a></p>
 			<p><a href="tip.html">Электротехнологические установки</a></p>
 			<p><a href="tip.html">Электроэнергетика и теплоэнергетика</a></p>
-			<p><a href="tip.html">Юриспруденция</a></p></left>
+			<p><a href="tip.html">Юриспруденция</a></p>
+			</center>
 			</div>
 			</div>
     <meta charset="utf-8">
 <p>Выберите тип сортировки компаний:</p>
-	<left><button class="myButton" onclick="show2('none');show1('block')">По наименованию факультета</button></left>
- <left><button class="myButton" onclick="show1('none');show2('block')">По наименованию направления обучения</button></left>	
+	<center><button class="myButton" onclick="show2('none');show1('block')">По наименованию факультета</button></center>
+ <center><button class="myButton" onclick="show1('none');show2('block')">По наименованию направления обучения</button></center>	
   </body>
   </html>
