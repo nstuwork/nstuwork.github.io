@@ -35,7 +35,7 @@
  	}
  	
  	.close{
- 		margin-left: 655px;
+ 		margin-left: 647px;
  		margin-top: 4px;
 		width: 30px;
  		height: 30px;
