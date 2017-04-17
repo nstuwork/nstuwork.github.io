@@ -149,7 +149,7 @@
 			</div>
     <meta charset="utf-8">
 <p>Выберите тип сортировки компаний:</p>
-	<center><button class="myButton" onclick="show2('none');show1('block')">По наименованию факультета</button></center>
- <center><button class="myButton" onclick="show1('none');show2('block')">По наименованию направления обучения</button></center>	
+	<center><button class="myButton" onclick="show2('none');show1('block')">По наименованию факультета</button>
+<button class="myButton" onclick="show1('none');show2('block')">По наименованию направления обучения</button></center>	
   </body>
   </html>
