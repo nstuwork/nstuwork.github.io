@@ -62,10 +62,6 @@
  						
  						 <!-- Картинка крестика-->
  				<img class="close" onclick="show('none')" src="https://image.flaticon.com/icons/svg/196/196271.svg">
- 					
- 						<!-- Картинка ipad'a-->
- 				<img  style="margin: 20px 0 0 50px;" src="http://sergey-oganesyan.ru/wp-content/uploads/2014/01/ipad.png">
- 				
  			</div>	
     <meta charset="utf-8">
 <p>Выберите тип сортировки компаний:</p>
