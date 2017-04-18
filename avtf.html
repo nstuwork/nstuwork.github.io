@@ -24,13 +24,13 @@
            <input id="text" />
         </td>
         <td>
-		 <select id="digits">
+		 <select id="text">
                 <option value="">---</option>
-                <option value="1">АВТ</option>
-                <option value="2">ВТ</option>
-                <option value="3">ЗИ</option>
-		<option value="4">ССОД</option>   
-                <option value="5">ЭИ</option>  
+                <option value="АВТ">АВТ</option>
+                <option value="ВТ">ВТ</option>
+                <option value="ЗИ">ЗИ</option>
+		<option value="ССОД">ССОД</option>   
+                <option value="ЭИ">ЭИ</option>  
             </select>
         </td>
         <td>
@@ -313,7 +313,7 @@ filterTable(
         0:document.getElementById("text"),
  
         /* Фильтр для второго столбца текстовое поле - только точное совпадение: */
-        1: document.getElementById("digits"),
+        1: document.getElementById("text"),
  
         /* Фильтр для третьего столбца выпадающий список: */
         2: document.getElementById("digits"),
