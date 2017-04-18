@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv='Content-Type' content='text/html; charset=utf8'>
-    <title>TABLE FILTER</title>
+    <title>Практика АВТФ</title>
     <style>
         body {
             font-family: "Helvetica";
@@ -27,7 +27,7 @@
 </head>
 <body>
 
-<h1>Фильтр данных в таблицах.</h1>
+<h1>Места прохождения практики на АВТФ.</h1>
 
   <table border='0' cellspacing='0' cellpadding='2' style='border-top:solid 1px #000000; border-left:solid 1px #000000;'>
     <thead>
@@ -39,29 +39,21 @@
     </tr>
     <tr>
         <td>
-            <input type="checkbox" id="charA" value="A" />A
-            <input type="checkbox" id="charB" value="B" />B
-            <input type="checkbox" id="charC" value="C" />C
         </td>
         <td>
-            <input id="text" />
+           <input id="regexp" />
         </td>
         <td>
-            <select id="digits">
+            <select id="text">
                 <option value="">---</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
+                <option value="АВТ">АВТ</option>
+                <option value="ВТ">ВТ</option>
+                <option value="ССОД">ССОД</option>
+                <option value="ЗИ">ЗИ</option>
+                <option value="ЭИ">ЭИ</option>
             </select>
         </td>
         <td>
-            <input type="radio" name="digit" id="radioZ" value="" checked="true" />-
-            <input type="radio" name="digit" id="radioA" value="1" />1
-            <input type="radio" name="digit" id="radioB" value="2" />2
-            <input type="radio" name="digit" id="radioC" value="3" />3
-        </td>
-        <td>
-            <input id="regexp" />
         </td>
     </tr>
     </thead>
@@ -364,50 +356,27 @@
 <script>
     filterTable( document.getElementById("target"), {
             /* Фильтр для первого столбца чекбоксы: */
-            0: new filterTable.Filter([ /* Элементы фильтра */
-                    document.getElementById("charA"),
-                    document.getElementById("charB"),
-                    document.getElementById("charC")
-                ],
+            0:/* new filterTable.Filter([ /* Элементы фильтра */
+                   // document.getElementById("charA"),
+                   // document.getElementById("charB"),
+                   // document.getElementById("charC")
+                //],
                 /* Коллбэк ф-ция валидации */
-                function (value, filters, i) {
+               // function (value, filters, i) {
                     /* Если чекбокс не отмечен - его значение не учавствует
                        в валидации поэтому мы обязаны вернуть true */
-                    if (false === filters[i].checked) return true;
+                   // if (false === filters[i].checked) return true;
                     /* Далее, при проверке, мы должны одновременно проверять
                        значения всех элементов набора при условии чекбокс
                        отмечен */
-                    return filters[0].checked && filters[0].value === value ||
-                            filters[1].checked && filters[1].value === value ||
-                            filters[2].checked && filters[2].value === value;
-                }
-            ),
-            /* Фильтр для второго столбца текстовое поле - только точное совпадение: */
-            1: document.getElementById("text"),
-            /* Фильтр для третьего столбца выпадающий список: */
-            2: document.getElementById("digits"),
-            /* Фильтр для четвертого столбца радио кнопки: */
-            3: new filterTable.Filter([/* Элеменеты фильтра */
-                    document.getElementById("radioZ"),
-                    document.getElementById("radioA"),
-                    document.getElementById("radioB"),
-                    document.getElementById("radioC")
-                ],
-                /* Коллбэк ф-ция валидации */
-                function (value, filters, i) {
-                    /* В filters[0] - у нас радио кнопка "Не выбрано", если она
-                       установлена фильтр не участвует в валидации и мы
-                       обязаны вернуть true */
-                    if (true === filters[0].checked) return true;
-                    /* Если какая то радиокнопка отмечена и содержимое проверяемой
-                      ячейки совпало то вернем true */
-                    return filters[1].checked && filters[1].value === value ||
-                           filters[2].checked && filters[2].value === value ||
-                           filters[3].checked && filters[3].value === value;
-                }
-            ),
-            /* Фильтр для пятого столбца Постепенный ввод слова: */
-            4: new filterTable.Filter(document.getElementById("regexp"),
+                 //   return filters[0].checked && filters[0].value === value ||
+                     //       filters[1].checked && filters[1].value === value ||
+                   //         filters[2].checked && filters[2].value === value;
+                //}
+           // ),*/
+        ,
+             /* Фильтр для пятого столбца Постепенный ввод слова: */
+            1:  new filterTable.Filter(document.getElementById("regexp"),
                 /* Коллбэк ф-ция валидации */
                 function (value, filters, i) {
                     return value.indexOf(filters[i].value) === 0;
@@ -416,7 +385,10 @@
                 "onkeyup"
             )
         }
-    );
+    ),
+            /* Фильтр для третьего столбца выпадающий список: */
+            2: document.getElementById("text");
+
 </script>
 
 <!--
