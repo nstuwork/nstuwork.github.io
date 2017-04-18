@@ -43,6 +43,8 @@
             <input type="checkbox" id="charАВТ" value="АВТ" />АВТ
             <input type="checkbox" id="charВТ" value="ВТ" />ВТ
             <input type="checkbox" id="charЗИ" value="ЗИ" />ЗИ
+            <input type="checkbox" id="charВТ" value="ССОД" />ССОД
+            <input type="checkbox" id="charЗИ" value="ЭИ" />ЭИ
         </td>
         <td>
         </td>
@@ -360,7 +362,9 @@
                        отмечен */
                     return filters[0].checked && filters[0].value === value ||
                             filters[1].checked && filters[1].value === value ||
-                            filters[2].checked && filters[2].value === value;
+                            filters[2].checked && filters[2].value === value ||
+                            filters[3].checked && filters[3].value === value ||
+                            filters[4].checked && filters[4].value === value;
                 }
             ),
             /* Фильтр для второго столбца текстовое поле - только точное совпадение: */
@@ -370,6 +374,8 @@
                     document.getElementById("charАВТ"),
                     document.getElementById("charВТ"),
                     document.getElementById("charЗИ")
+                    document.getElementById("charССОД"),
+                    document.getElementById("charЭИ")
                 ],
                 /* Коллбэк ф-ция валидации */
                 function (value, filters, i) {
@@ -379,9 +385,11 @@
                     /* Далее, при проверке, мы должны одновременно проверять
                        значения всех элементов набора при условии чекбокс
                        отмечен */
-                    return filters[0].checked && filters[0].value === value ||
+                     return filters[0].checked && filters[0].value === value ||
                             filters[1].checked && filters[1].value === value ||
-                            filters[2].checked && filters[2].value === value;
+                            filters[2].checked && filters[2].value === value ||
+                            filters[3].checked && filters[3].value === value ||
+                            filters[4].checked && filters[4].value === value;
             }
                                      );
 </script>
