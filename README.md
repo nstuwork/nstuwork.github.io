@@ -108,8 +108,8 @@
  			<div id="window1">
 			<div class="column">
 			<center>
-			<p><a href="tip.html">АВТФ</a></p>
-			<p><a href="tip.html">ИСТР</a></p>
+			<p><a href="https://nstuwork.github.io/123/avtf.html">АВТФ</a></p>
+			<p><a href="">ИСТР</a></p>
 			<p><a href="tip.html">МТФ</a></p>
 			<p><a href="tip.html">РЭФ</a></p>
 			<p><a href="tip.html">ФБ</a></p>
