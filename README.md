@@ -149,6 +149,6 @@
     <meta charset="utf-8">
 <center><p>Выберите тип сортировки компаний:</p></center>
 	<center><button class="myButton" onclick="show2('none');show1('block')">По наименованию факультета</button>
-<button class="myButton" onclick="show1('none');show2('block')">По наименованию направления обучения</button></center>	
+<button class="myButton" onclick="show1('none');show2('block')">По сфере деятельности</button></center>	
   </body>
   </html>
