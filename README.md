@@ -109,16 +109,16 @@
 			<div class="column">
 			<center>
 			<p><a href="https://nstuwork.github.io/123/avtf.html">АВТФ</a></p>
-			<p><a href="">ИСТР</a></p>
-			<p><a href="tip.html">МТФ</a></p>
-			<p><a href="tip.html">РЭФ</a></p>
-			<p><a href="tip.html">ФБ</a></p>
-			<p><a href="tip.html">ФЛА</a></p>
-			<p><a href="tip.html">ФМА</a></p>
-			<p><a href="tip.html">ФПМИ</a></p>
-			<p><a href="tip.html">ФТФ</a></p>
-			<p><a href="tip.html">ФЭН</a></p>
-			<p><a href="tip.html">ЮФ</a></p>
+			<p>ИСТР</p>
+			<p>МТФ</p>
+			<p>РЭФ</p>
+			<p>ФБ</p>
+			<p>ФЛА</p>
+			<p>ФМА</p>
+			<p>ФПМИ</p>
+			<p>ФТФ</p>
+			<p>ФЭН</p>
+			<p>ЮФ</p>
 			</center>
 			</div>	
 			</div>
