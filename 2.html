@@ -1,8 +1,6 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv='Content-Type' content='text/html; charset=utf8'>
     <title>TABLE FILTER</title>
     <style>
         body {
@@ -28,15 +26,21 @@
 </head>
 <body>
 
-<h1>Р¤РёР»СЊС‚СЂ РґР°РЅРЅС‹С… РІ С‚Р°Р±Р»РёС†Р°С….</h1>
+<h1>Фильтр данных в таблицах.</h1>
+
+<p>Автор Комаров Артем
+    <br />email: arty-komarov@yandex.ru
+    <br />website: <a href="http://php-zametki.ru">http://php-zametki.ru</a>
+</p>
+
 <table>
     <thead>
     <tr>
-        <th>РЎРёРјРІРѕР»С‹</th>
-        <th>РўРµРєСЃС‚</th>
-        <th>Р¦РёС„СЂС‹</th>
-        <th>Р¦РёС„СЂС‹</th>
-        <th>РўРµРєСЃС‚</th>
+        <th>Символы</th>
+        <th>Текст</th>
+        <th>Цифры</th>
+        <th>Цифры</th>
+        <th>Текст</th>
     </tr>
     <tr>
         <td>
@@ -68,101 +72,101 @@
     </thead>
     <tbody id="target">
     <tr>
-        <td>B</td><td>РђСЂР±СѓР·</td><td>2</td><td>3</td><td>Р¤Р°РЅР°С‚</td>
+        <td>B</td><td>Арбуз</td><td>2</td><td>3</td><td>Фанат</td>
     </tr>
     <tr>
-        <td>B</td><td>РЎС‚СЂРµР»РѕРє</td><td>1</td><td>2</td><td>РђСЂР±Р°</td>
+        <td>B</td><td>Стрелок</td><td>1</td><td>2</td><td>Арба</td>
     </tr>
     <tr>
-        <td>C</td><td>Р¤Р°РЅР°С‚</td><td>3</td><td>1</td><td>РЎС‚СЂРµР»РѕРє</td>
+        <td>C</td><td>Фанат</td><td>3</td><td>1</td><td>Стрелок</td>
     </tr>
     <tr>
-        <td>C</td><td>РЎС‚СЂРµР»РѕРє</td><td>2</td><td>1</td><td>Р¤Р°РЅС‚РѕРјР°СЃ</td>
+        <td>C</td><td>Стрелок</td><td>2</td><td>1</td><td>Фантомас</td>
     </tr>
     <tr>
-        <td>B</td><td>РЎС‚СЂРµР»РѕРє</td><td>1</td><td>2</td><td>РђСЂР±СѓР·</td>
+        <td>B</td><td>Стрелок</td><td>1</td><td>2</td><td>Арбуз</td>
     </tr>
     <tr>
-        <td>C</td><td>Р¤Р°РЅР°С‚</td><td>3</td><td>3</td><td>РЎС‚СЂРµР»РѕРє</td>
+        <td>C</td><td>Фанат</td><td>3</td><td>3</td><td>Стрелок</td>
     </tr>
     <tr>
-        <td>A</td><td>РђСЂР±СѓР·</td><td>2</td><td>2</td><td>РђСЂР±СѓР·</td>
+        <td>A</td><td>Арбуз</td><td>2</td><td>2</td><td>Арбуз</td>
     </tr>
     <tr>
-        <td>A</td><td>Р¤Р°РЅР°С‚</td><td>1</td><td>1</td><td>РЎС‚СЂРµР»РѕС‡РЅРёРє</td>
+        <td>A</td><td>Фанат</td><td>1</td><td>1</td><td>Стрелочник</td>
     </tr>
     <tr>
-        <td>C</td><td>Р¤Р°РЅР°С‚</td><td>3</td><td>3</td><td>РђСЂР±СѓР·</td>
+        <td>C</td><td>Фанат</td><td>3</td><td>3</td><td>Арбуз</td>
     </tr>
     <tr>
-        <td>B</td><td>Р¤Р°РЅР°С‚</td><td>2</td><td>3</td><td>Р¤Р°РЅС‚РёРє</td>
+        <td>B</td><td>Фанат</td><td>2</td><td>3</td><td>Фантик</td>
     </tr>
     <tr>
-        <td>C</td><td>РЎС‚СЂРµР»РѕРє</td><td>1</td><td>1</td><td>РђСЂР±СѓР·</td>
+        <td>C</td><td>Стрелок</td><td>1</td><td>1</td><td>Арбуз</td>
     </tr>
     <tr>
-        <td>C</td><td>Р¤Р°РЅР°С‚</td><td>3</td><td>2</td><td>РЎС‚СЂРµР»РєР°</td>
+        <td>C</td><td>Фанат</td><td>3</td><td>2</td><td>Стрелка</td>
     </tr>
     </tbody>
 </table>
 
-<script scr="https://nstuwork.github.io/filterTable.v1.0.min.js"></script>
+<script src="filterTable.v1.0.min.js"></script>
 <script>
     filterTable( document.getElementById("target"), {
-            /* Р¤РёР»СЊС‚СЂ РґР»СЏ РїРµСЂРІРѕРіРѕ СЃС‚РѕР»Р±С†Р° С‡РµРєР±РѕРєСЃС‹: */
-            0: new filterTable.Filter([ /* Р­Р»РµРјРµРЅС‚С‹ С„РёР»СЊС‚СЂР° */
+            /* Фильтр для первого столбца чекбоксы: */
+            0: new filterTable.Filter([ /* Элементы фильтра */
                     document.getElementById("charA"),
                     document.getElementById("charB"),
                     document.getElementById("charC")
                 ],
-                /* РљРѕР»Р»Р±СЌРє С„-С†РёСЏ РІР°Р»РёРґР°С†РёРё */
+                /* Коллбэк ф-ция валидации */
                 function (value, filters, i) {
-                    /* Р•СЃР»Рё С‡РµРєР±РѕРєСЃ РЅРµ РѕС‚РјРµС‡РµРЅ - РµРіРѕ Р·РЅР°С‡РµРЅРёРµ РЅРµ СѓС‡Р°РІСЃС‚РІСѓРµС‚
-                       РІ РІР°Р»РёРґР°С†РёРё РїРѕСЌС‚РѕРјСѓ РјС‹ РѕР±СЏР·Р°РЅС‹ РІРµСЂРЅСѓС‚СЊ true */
+                    /* Если чекбокс не отмечен - его значение не учавствует
+                       в валидации поэтому мы обязаны вернуть true */
                     if (false === filters[i].checked) return true;
-                    /* Р”Р°Р»РµРµ, РїСЂРё РїСЂРѕРІРµСЂРєРµ, РјС‹ РґРѕР»Р¶РЅС‹ РѕРґРЅРѕРІСЂРµРјРµРЅРЅРѕ РїСЂРѕРІРµСЂСЏС‚СЊ
-                       Р·РЅР°С‡РµРЅРёСЏ РІСЃРµС… СЌР»РµРјРµРЅС‚РѕРІ РЅР°Р±РѕСЂР° РїСЂРё СѓСЃР»РѕРІРёРё С‡РµРєР±РѕРєСЃ
-                       РѕС‚РјРµС‡РµРЅ */
+                    /* Далее, при проверке, мы должны одновременно проверять
+                       значения всех элементов набора при условии чекбокс
+                       отмечен */
                     return filters[0].checked && filters[0].value === value ||
                             filters[1].checked && filters[1].value === value ||
                             filters[2].checked && filters[2].value === value;
                 }
             ),
 
-            /* Р¤РёР»СЊС‚СЂ РґР»СЏ РІС‚РѕСЂРѕРіРѕ СЃС‚РѕР»Р±С†Р° С‚РµРєСЃС‚РѕРІРѕРµ РїРѕР»Рµ - С‚РѕР»СЊРєРѕ С‚РѕС‡РЅРѕРµ СЃРѕРІРїР°РґРµРЅРёРµ: */
+            /* Фильтр для второго столбца текстовое поле - только точное совпадение: */
             1: document.getElementById("text"),
 
-            /* Р¤РёР»СЊС‚СЂ РґР»СЏ С‚СЂРµС‚СЊРµРіРѕ СЃС‚РѕР»Р±С†Р° РІС‹РїР°РґР°СЋС‰РёР№ СЃРїРёСЃРѕРє: */
+            /* Фильтр для третьего столбца выпадающий список: */
             2: document.getElementById("digits"),
 
-            /* Р¤РёР»СЊС‚СЂ РґР»СЏ С‡РµС‚РІРµСЂС‚РѕРіРѕ СЃС‚РѕР»Р±С†Р° СЂР°РґРёРѕ РєРЅРѕРїРєРё: */
-            3: new filterTable.Filter([/* Р­Р»РµРјРµРЅРµС‚С‹ С„РёР»СЊС‚СЂР° */
+            /* Фильтр для четвертого столбца радио кнопки: */
+            3: new filterTable.Filter([/* Элеменеты фильтра */
                     document.getElementById("radioZ"),
                     document.getElementById("radioA"),
                     document.getElementById("radioB"),
                     document.getElementById("radioC")
                 ],
-                /* РљРѕР»Р»Р±СЌРє С„-С†РёСЏ РІР°Р»РёРґР°С†РёРё */
+                /* Коллбэк ф-ция валидации */
                 function (value, filters, i) {
-                    /* Р’ filters[0] - Сѓ РЅР°СЃ СЂР°РґРёРѕ РєРЅРѕРїРєР° "РќРµ РІС‹Р±СЂР°РЅРѕ", РµСЃР»Рё РѕРЅР°
-                       СѓСЃС‚Р°РЅРѕРІР»РµРЅР° С„РёР»СЊС‚СЂ РЅРµ СѓС‡Р°СЃС‚РІСѓРµС‚ РІ РІР°Р»РёРґР°С†РёРё Рё РјС‹
-                       РѕР±СЏР·Р°РЅС‹ РІРµСЂРЅСѓС‚СЊ true */
+                    /* В filters[0] - у нас радио кнопка "Не выбрано", если она
+                       установлена фильтр не участвует в валидации и мы
+                       обязаны вернуть true */
                     if (true === filters[0].checked) return true;
-                    /* Р•СЃР»Рё РєР°РєР°СЏ С‚Рѕ СЂР°РґРёРѕРєРЅРѕРїРєР° РѕС‚РјРµС‡РµРЅР° Рё СЃРѕРґРµСЂР¶РёРјРѕРµ РїСЂРѕРІРµСЂСЏРµРјРѕР№
-                      СЏС‡РµР№РєРё СЃРѕРІРїР°Р»Рѕ С‚Рѕ РІРµСЂРЅРµРј true */
+                    /* Если какая то радиокнопка отмечена и содержимое проверяемой
+                      ячейки совпало то вернем true */
                     return filters[1].checked && filters[1].value === value ||
                            filters[2].checked && filters[2].value === value ||
                            filters[3].checked && filters[3].value === value;
                 }
             ),
 
-            /* Р¤РёР»СЊС‚СЂ РґР»СЏ РїСЏС‚РѕРіРѕ СЃС‚РѕР»Р±С†Р° РџРѕСЃС‚РµРїРµРЅРЅС‹Р№ РІРІРѕРґ СЃР»РѕРІР°: */
+            /* Фильтр для пятого столбца Постепенный ввод слова: */
             4: new filterTable.Filter(document.getElementById("regexp"),
-                /* РљРѕР»Р»Р±СЌРє С„-С†РёСЏ РІР°Р»РёРґР°С†РёРё */
+                /* Коллбэк ф-ция валидации */
                 function (value, filters, i) {
                     return value.indexOf(filters[i].value) === 0;
                 },
-                /* Р‘СѓРґРµРј РІС‹Р·С‹РІР°С‚СЊ РІР°Р»РёРґР°С†РёСЋ РїРѕ СЃРѕР±С‹С‚РёСЋ onkeyup С„РёР»СЊС‚СЂР° */
+                /* Будем вызывать валидацию по событию onkeyup фильтра */
                 "onkeyup"
             )
         }
@@ -170,4 +174,3 @@
 </script>
 
 </body>
-</html>
