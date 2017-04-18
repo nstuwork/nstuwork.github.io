@@ -44,13 +44,13 @@
            <input id="regexp" />
         </td>
         <td>
-            <select id="text">
+            <select id="digit">
                 <option value="">---</option>
-                <option value="АВТ">АВТ</option>
-                <option value="ВТ">ВТ</option>
-                <option value="ССОД">ССОД</option>
-                <option value="ЗИ">ЗИ</option>
-                <option value="ЭИ">ЭИ</option>
+                <option value="1">АВТ</option>
+                <option value="2">ВТ</option>
+                <option value="3">ССОД</option>
+                <option value="4">ЗИ</option>
+                <option value="5">ЭИ</option>
             </select>
         </td>
         <td>
@@ -356,25 +356,24 @@
 <script>
     filterTable( document.getElementById("target"), {
             /* Фильтр для первого столбца чекбоксы: */
-            0:/* new filterTable.Filter([ /* Элементы фильтра */
-                   // document.getElementById("charA"),
-                   // document.getElementById("charB"),
-                   // document.getElementById("charC")
-                //],
+            0: new filterTable.Filter([ /* Элементы фильтра */
+                   document.getElementById("charA"),
+                    document.getElementById("charB"),
+                    document.getElementById("charC")
+               ,
                 /* Коллбэк ф-ция валидации */
-               // function (value, filters, i) {
+               function (value, filters, i) {
                     /* Если чекбокс не отмечен - его значение не учавствует
                        в валидации поэтому мы обязаны вернуть true */
-                   // if (false === filters[i].checked) return true;
+                  if (false === filters[i].checked) return true;
                     /* Далее, при проверке, мы должны одновременно проверять
                        значения всех элементов набора при условии чекбокс
                        отмечен */
-                 //   return filters[0].checked && filters[0].value === value ||
-                     //       filters[1].checked && filters[1].value === value ||
-                   //         filters[2].checked && filters[2].value === value;
-                //}
-           // ),*/
-        ,
+                return filters[0].checked && filters[0].value === value ||
+                filters[1].checked && filters[1].value === value ||
+                filters[2].checked && filters[2].value === value;
+                }
+          ),
              /* Фильтр для пятого столбца Постепенный ввод слова: */
             1:  new filterTable.Filter(document.getElementById("regexp"),
                 /* Коллбэк ф-ция валидации */
@@ -387,7 +386,7 @@
         }
     ),
             /* Фильтр для третьего столбца выпадающий список: */
-            2: document.getElementById("text");
+            2: document.getElementById("digit");
 
 </script>
 
