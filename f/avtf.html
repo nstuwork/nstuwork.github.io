@@ -1,4 +1,3 @@
-!DOCTYPE html>
 <html>
 <head>
     <title>TABLE FILTER</title>
@@ -27,11 +26,6 @@
 <body>
 
 <h1>Фильтр данных в таблицах.</h1>
-
-<p>Автор Комаров Артем
-    <br />email: arty-komarov@yandex.ru
-    <br />website: <a href="http://php-zametki.ru">http://php-zametki.ru</a>
-</p>
 
 <table>
     <thead>
@@ -132,13 +126,10 @@
                             filters[2].checked && filters[2].value === value;
                 }
             ),
-
             /* Фильтр для второго столбца текстовое поле - только точное совпадение: */
             1: document.getElementById("text"),
-
             /* Фильтр для третьего столбца выпадающий список: */
             2: document.getElementById("digits"),
-
             /* Фильтр для четвертого столбца радио кнопки: */
             3: new filterTable.Filter([/* Элеменеты фильтра */
                     document.getElementById("radioZ"),
@@ -159,7 +150,6 @@
                            filters[3].checked && filters[3].value === value;
                 }
             ),
-
             /* Фильтр для пятого столбца Постепенный ввод слова: */
             4: new filterTable.Filter(document.getElementById("regexp"),
                 /* Коллбэк ф-ция валидации */
