@@ -88,10 +88,13 @@
 <script>
     filterTable( document.getElementById("target"), {
             /* Фильтр для первого столбца чекбоксы: */
-            0: new filterTable.Filter([ /* Элементы фильтра */
-                    document.getElementById("charA"),
-                    document.getElementById("charB"),
-                    document.getElementById("charC")
+            0: document.getElementById("digit"),
+            /* Фильтр для второго столбца текстовое поле - только точное совпадение: */
+            1: document.getElementById("text"),
+            /* Фильтр для третьего столбца выпадающий список: */
+            2: new filterTable.Filter([ /* Элементы фильтра */
+                    document.getElementById("charABT"),
+                    document.getElementById("charBT"),
                 ],
                 /* Коллбэк ф-ция валидации */
                 function (value, filters, i) {
@@ -106,10 +109,6 @@
                             filters[2].checked && filters[2].value === value;
                 }
             ),
-            /* Фильтр для второго столбца текстовое поле - только точное совпадение: */
-            1: document.getElementById("text"),
-            /* Фильтр для третьего столбца выпадающий список: */
-            2: document.getElementById("text"),
             /* Фильтр для четвертого столбца радио кнопки: */
             3: new filterTable.Filter([/* Элеменеты фильтра */
                     document.getElementById("radioZ"),
