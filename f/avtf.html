@@ -50,8 +50,11 @@
             <input id="text" />
         </td>
         <td>
-            <input type="checkbox" id="charABT" value="ABT" />ABT
-            <input type="checkbox" id="charBT" value="BT" />BT
+            <select id="digit">
+                <option value="">---</option>
+                <option value="ABT">ABT</option>
+                <option value="BT">BT</option>
+            </select>
         </td>
         <td>
             <input type="radio" name="digit" id="radioZ" value="" checked="true" />-
@@ -92,23 +95,7 @@
             /* Фильтр для второго столбца текстовое поле - только точное совпадение: */
             1: document.getElementById("text"),
             /* Фильтр для третьего столбца выпадающий список: */
-            2: new filterTable.Filter([ /* Элементы фильтра */
-                    document.getElementById("charABT"),
-                    document.getElementById("charBT"),
-                ],
-                /* Коллбэк ф-ция валидации */
-                function (value, filters, i) {
-                    /* Если чекбокс не отмечен - его значение не учавствует
-                       в валидации поэтому мы обязаны вернуть true */
-                    if (false === filters[i].checked) return true;
-                    /* Далее, при проверке, мы должны одновременно проверять
-                       значения всех элементов набора при условии чекбокс
-                       отмечен */
-                    return filters[0].checked && filters[0].value === value ||
-                            filters[1].checked && filters[1].value === value ||
-                            filters[2].checked && filters[2].value === value;
-                }
-            ),
+            2: document.getElementById("text"),
             /* Фильтр для четвертого столбца радио кнопки: */
             3: new filterTable.Filter([/* Элеменеты фильтра */
                     document.getElementById("radioZ"),
