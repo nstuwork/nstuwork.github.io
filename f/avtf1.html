@@ -1,0 +1,419 @@
+<html>
+<head>
+    <title>TABLE FILTER</title>
+    <style>
+        body {
+            font-family: "Helvetica";
+            font-size: medium;
+        }
+        table {
+            border-collapse: collapse;
+            text-align: center;
+            margin: auto;
+        }
+        table td, table th {
+            border: solid 1px #aaa;
+            padding: 10px;
+        }
+        table tbody tr:nth-child(2n) {
+            background: #a8d7ff;
+        }
+        table tbody tr:hover {
+            background: #fffcb6;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Фильтр данных в таблицах.</h1>
+
+<table>
+    <thead>
+    <tr>
+        <th>Символы</th>
+        <th>Текст</th>
+        <th>Цифры</th>
+        <th>Цифры</th>
+        <th>Текст</th>
+    </tr>
+    <tr>
+        <td>
+            <input type="checkbox" id="charA" value="A" />A
+            <input type="checkbox" id="charB" value="B" />B
+            <input type="checkbox" id="charC" value="C" />C
+        </td>
+        <td>
+            <input id="text" />
+        </td>
+        <td>
+            <select id="digits">
+                <option value="">---</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </td>
+        <td>
+            <input type="radio" name="digit" id="radioZ" value="" checked="true" />-
+            <input type="radio" name="digit" id="radioA" value="1" />1
+            <input type="radio" name="digit" id="radioB" value="2" />2
+            <input type="radio" name="digit" id="radioC" value="3" />3
+        </td>
+        <td>
+            <input id="regexp" />
+        </td>
+    </tr>
+    </thead>
+    <tbody id="target">
+<tr>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>1</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ОАО Улан-Удэнский авиационный завод</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>АВТ</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ИТ</td>
+</tr>
+<tr>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>2</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'> Государственное научное учреждение Сибирский физико-технический институт аграрных проблем Российской сельскохозяйственной академии</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ВТ</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Вычислительная техника</td>
+</tr>
+<tr>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>3</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>АО Новосибирский механический завод Искра</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ВТ</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Вычислительная техника</td>
+</tr>
+<tr>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>4</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО ГосКомСофт</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ВТ</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Вычислительная техника</td>
+</tr>
+<tr>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>5</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО ДИАЛ групп</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ВТ</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Вычислительная техника</td>
+</tr>
+<tr>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>6</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО Единый расчетный центр-Сибирь</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ВТ</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Вычислительная техника</td>
+</tr>
+<tr>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>7</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО ИТ-ресурс</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ВТ</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Вычислительная техника</td>
+</tr>
+<tr>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>8</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО Новео НСК</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ВТ</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Вычислительная техника</td>
+</tr>
+<tr>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>9</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО Предприятие "Элтекс"</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ВТ</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Вычислительная техника</td>
+</tr>
+<tr>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>10</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ФБУЗ Западно-Сибирский Дорожный филиал "Центр гигиены и эпидемиологии по железнодорожному транспорту"</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ВТ</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Вычислительная техника</td>
+</tr>
+<tr>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>11</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ФБУН Институт вычислительной математики и математической геофизики СО РАН</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ВТ</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Вычислительная техника</td>
+</tr>
+<tr>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>12</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>АО Новосибирский завод полупроводниковых приборов с ОКБ</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЗИ</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Защита информации</td>
+</tr>
+<tr>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>13</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО Аттестационный технический центр</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЗИ</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Защита информации</td>
+</tr>
+<tr>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>14</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО НЗХК – Энергия</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЗИ</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Защита информации</td>
+</tr>
+<tr>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>15</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО Предприятие "Элтекс"</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЗИ</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Защита информации</td>
+</tr>
+<tr>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>16</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО Русская нефритовая компания</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЗИ</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Защита информации</td>
+</tr>
+<tr>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>17</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО Системы информационной безопасности</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЗИ</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Защита информации</td>
+</tr>
+<tr>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>18</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО УК «БФК»</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЗИ</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Защита информации</td>
+</tr>
+<tr>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>19</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ФГУП Научно-технический центр «Атлас»</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЗИ</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Защита информации</td>
+</tr>
+<tr>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>20</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ФГУП Новосибирский научно-технический центр «Научно-производственное предприятие «Гамма»</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЗИ</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Защита информации</td>
+</tr>
+<tr>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>21</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО Лига Роботов</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ССОД</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Системы обработки данных</td>
+</tr>
+<tr>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>22</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО Новео НСК</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ССОД</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Системы обработки данных</td>
+</tr>
+<tr>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>23</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО Техноград Плюс</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ССОД</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Системы обработки данных</td>
+</tr>
+<tr>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>24</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО ЭНИТЕХ</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ССОД</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Системы обработки данных</td>
+</tr>
+<tr>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>25</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ФГУП Сибирский государственныйордена  Трудового Красного Знамени научно-исследовательский институт метрологии</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ССОД</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Системы обработки данных</td>
+</tr>
+<tr>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>26</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>АНО Сибирский центр технической диагностики и экспертизы "Диасиб"</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЭИ</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Экономическая информатика</td>
+</tr>
+<tr>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>27</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>АО Новосибирский авиаремонтный завод</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЭИ</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Экономическая информатика</td>
+</tr>
+<tr>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>28</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ГАОУ ВПО Новосибирский национальный исследовательский государственный университет</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЭИ</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Экономическая информатика</td>
+</tr>
+<tr>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>29</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ОАО Октава</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЭИ</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Экономическая информатика</td>
+</tr>
+<tr>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>30</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ОАО Ривер Парк</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЭИ</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Экономическая информатика</td>
+</tr>
+<tr>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>31</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО Адидас</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЭИ</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Экономическая информатика</td>
+</tr>
+<tr>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>32</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО Ай Ти Констракт</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЭИ</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Экономическая информатика</td>
+</tr>
+<tr>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>33</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО Бургер Рус</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЭИ</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Экономическая информатика</td>
+</tr>
+<tr>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>34</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО ГосКомСофт</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЭИ</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Экономическая информатика</td>
+</tr>
+<tr>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>35</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО ИКЕА ДОМ</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЭИ</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Экономическая информатика</td>
+</tr>
+<tr>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>36</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО Кей Зет</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЭИ</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Экономическая информатика</td>
+</tr>
+<tr>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>37</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО Новосибирск-мебель</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЭИ</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Экономическая информатика</td>
+</tr>
+<tr>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>38</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО НовЭК</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЭИ</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Экономическая информатика</td>
+</tr>
+<tr>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>39</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО Обувь России</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЭИ</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Экономическая информатика</td>
+</tr>
+<tr>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>40</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО Оксфорд</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЭИ</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Экономическая информатика</td>
+</tr>
+<tr>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>41</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО ПСФ Энергомонтажспецстрой</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЭИ</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Экономическая информатика</td>
+</tr>
+<tr>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>42</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО Рич Фэмили</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЭИ</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Экономическая информатика</td>
+</tr>
+<tr>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>43</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО Русская нефритовая компания</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЭИ</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Экономическая информатика</td>
+</tr>
+<tr>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>44</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО СитиКом</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЭИ</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Экономическая информатика</td>
+</tr>
+<tr>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>45</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО Технический центр «СофтМастер»</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЭИ</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Экономическая информатика</td>
+</tr>
+<tr>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>46</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО Эрнст энд Янг</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЭИ</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Экономическая информатика</td>
+</tr>
+<tr>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>47</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО 1С-РАРУС Новосибирск</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЭИ</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Экономическая информатика</td>
+</tr>
+<tr>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>48</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ФКУ ЦУКС ГУ МЧС России по Новосибирской области</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЭИ</td>
+<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Экономическая информатика</td>
+</tr>
+    </tbody>
+</table>
+
+<script src="filterTable.v1.0.min.js"></script>
+<script>
+    filterTable( document.getElementById("target"), {
+            /* Фильтр для первого столбца чекбоксы: */
+            0: new filterTable.Filter([ /* Элементы фильтра */
+                    document.getElementById("charA"),
+                    document.getElementById("charB"),
+                    document.getElementById("charC")
+                ],
+                /* Коллбэк ф-ция валидации */
+                function (value, filters, i) {
+                    /* Если чекбокс не отмечен - его значение не учавствует
+                       в валидации поэтому мы обязаны вернуть true */
+                    if (false === filters[i].checked) return true;
+                    /* Далее, при проверке, мы должны одновременно проверять
+                       значения всех элементов набора при условии чекбокс
+                       отмечен */
+                    return filters[0].checked && filters[0].value === value ||
+                            filters[1].checked && filters[1].value === value ||
+                            filters[2].checked && filters[2].value === value;
+                }
+            ),
+            /* Фильтр для второго столбца текстовое поле - только точное совпадение: */
+            1: document.getElementById("text"),
+            /* Фильтр для третьего столбца выпадающий список: */
+            2: document.getElementById("digits"),
+            /* Фильтр для четвертого столбца радио кнопки: */
+            3: new filterTable.Filter([/* Элеменеты фильтра */
+                    document.getElementById("radioZ"),
+                    document.getElementById("radioA"),
+                    document.getElementById("radioB"),
+                    document.getElementById("radioC")
+                ],
+                /* Коллбэк ф-ция валидации */
+                function (value, filters, i) {
+                    /* В filters[0] - у нас радио кнопка "Не выбрано", если она
+                       установлена фильтр не участвует в валидации и мы
+                       обязаны вернуть true */
+                    if (true === filters[0].checked) return true;
+                    /* Если какая то радиокнопка отмечена и содержимое проверяемой
+                      ячейки совпало то вернем true */
+                    return filters[1].checked && filters[1].value === value ||
+                           filters[2].checked && filters[2].value === value ||
+                           filters[3].checked && filters[3].value === value;
+                }
+            ),
+            /* Фильтр для пятого столбца Постепенный ввод слова: */
+            4: new filterTable.Filter(document.getElementById("regexp"),
+                /* Коллбэк ф-ция валидации */
+                function (value, filters, i) {
+                    return value.indexOf(filters[i].value) === 0;
+                },
+                /* Будем вызывать валидацию по событию onkeyup фильтра */
+                "onkeyup"
+            )
+        }
+    );
+</script>
+
+</body>
+</html>
