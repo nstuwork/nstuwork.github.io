@@ -363,24 +363,7 @@
 <script>
     filterTable( document.getElementById("target"), {
             /* Фильтр для первого столбца чекбоксы: */
-            0: new filterTable.Filter([ /* Элементы фильтра */
-                    document.getElementById("charA"),
-                    document.getElementById("charB"),
-                    document.getElementById("charC")
-                ],
-                /* Коллбэк ф-ция валидации */
-                function (value, filters, i) {
-                    /* Если чекбокс не отмечен - его значение не учавствует
-                       в валидации поэтому мы обязаны вернуть true */
-                    if (false === filters[i].checked) return true;
-                    /* Далее, при проверке, мы должны одновременно проверять
-                       значения всех элементов набора при условии чекбокс
-                       отмечен */
-                    return filters[0].checked && filters[0].value === value ||
-                            filters[1].checked && filters[1].value === value ||
-                            filters[2].checked && filters[2].value === value;
-                }
-            ),
+            0: document.getElementById("digits"),
             /* Фильтр для второго столбца текстовое поле - только точное совпадение: */
             1: document.getElementById("text"),
             /* Фильтр для третьего столбца выпадающий список: */
