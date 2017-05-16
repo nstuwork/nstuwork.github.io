@@ -1,0 +1,133 @@
+<html>
+<head>
+    <title>TABLE FILTER</title>
+    <style>
+        body {
+            font-family: "Helvetica";
+            font-size: medium;
+        }
+        table {
+            border-collapse: collapse;
+            text-align: center;
+            margin: auto;
+        }
+        table td, table th {
+            border: solid 1px #aaa;
+            padding: 10px;
+        }
+        table tbody tr:nth-child(2n) {
+            background: #a8d7ff;
+        }
+        table tbody tr:hover {
+            background: #fffcb6;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Фильтр данных в таблицах.</h1>
+
+<table>
+    <thead>
+    <tr>
+        <th>№</th>
+        <th>Наименование организации</th>
+        <th>Кафедра</th>
+        <th>Направление</th>
+        <th>Наименование организации</th>
+    </tr>
+
+    <tr>
+        <td>
+            <select id="digit">
+                <option value="">---</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+        </td>
+
+        <td>
+            <input id="text" />
+        </td>
+        <td>
+            <select id="digit">
+                <option value="">---</option>
+                <option value="ABT">ABT</option>
+                <option value="BT">BT</option>
+            </select>
+        </td>
+        <td>
+            <input type="radio" name="digit" id="radioZ" value="" checked="true" />-
+            <input type="radio" name="digit" id="radioA" value="1" />1
+            <input type="radio" name="digit" id="radioB" value="2" />2
+            <input type="radio" name="digit" id="radioC" value="3" />3
+        </td>
+        <td>
+            <input id="regexp" />
+        </td>
+    </tr>
+    </thead>
+    <tbody id="target">
+    <tr>
+        <td>1</td><td>ОАО Улан-Удэнский авиационный завод</td><td>ABT</td><td>ИТ</td><td>ОАО Улан-Удэнский авиационный завод</td>
+    </tr>
+    <tr>
+        <td>2</td><td>Государственное научное учреждение Сибирский физико-технический институт аграрных проблем Российской сельскохозяйственной академии
+</td><td>BT</td><td>Вычислительная техника</td><td>Государственное научное учреждение Сибирский физико-технический институт аграрных проблем Российской сельскохозяйственной академии</td>
+    </tr>
+    <tr>
+        <td>3</td><td>АО Новосибирский механический завод Искра</td><td>BT</td><td>Вычислительная техника</td><td>АО Новосибирский механический завод Искра</td>
+    </tr>
+    <tr>
+        <td>4</td><td>ООО ГосКомСофт</td><td>BT</td><td>Вычислительная техника</td><td>ООО ГосКомСофт</td>
+    </tr>
+    <tr>
+        <td>5</td><td>ООО ДИАЛ групп</td><td>BT</td><td>Вычислительная техника</td><td>ООО ДИАЛ групп</td>
+    </tr>
+    </tbody>
+</table>
+
+<script src="filterTable.v1.0.min.js"></script>
+<script>
+    filterTable( document.getElementById("target"), {
+            /* Фильтр для первого столбца чекбоксы: */
+            0: document.getElementById("digit"),
+            /* Фильтр для второго столбца текстовое поле - только точное совпадение: */
+            1: document.getElementById("text"),
+            /* Фильтр для третьего столбца выпадающий список: */
+            2: document.getElementById("text"),
+            /* Фильтр для четвертого столбца радио кнопки: */
+            3: new filterTable.Filter([/* Элеменеты фильтра */
+                    document.getElementById("radioZ"),
+                    document.getElementById("radioA"),
+                    document.getElementById("radioB"),
+                    document.getElementById("radioC")
+                ],
+                /* Коллбэк ф-ция валидации */
+                function (value, filters, i) {
+                    /* В filters[0] - у нас радио кнопка "Не выбрано", если она
+                       установлена фильтр не участвует в валидации и мы
+                       обязаны вернуть true */
+                    if (true === filters[0].checked) return true;
+                    /* Если какая то радиокнопка отмечена и содержимое проверяемой
+                      ячейки совпало то вернем true */
+                    return filters[1].checked && filters[1].value === value ||
+                           filters[2].checked && filters[2].value === value ||
+                           filters[3].checked && filters[3].value === value;
+                }
+            ),
+            /* Фильтр для пятого столбца Постепенный ввод слова: */
+            4: new filterTable.Filter(document.getElementById("regexp"),
+                /* Коллбэк ф-ция валидации */
+                function (value, filters, i) {
+                    return value.indexOf(filters[i].value) === 0;
+                },
+                /* Будем вызывать валидацию по событию onkeyup фильтра */
+                "onkeyup"
+            )
+        }
+    );
+</script>
+
+</body>
+</html>
