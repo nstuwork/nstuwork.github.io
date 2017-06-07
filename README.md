@@ -113,6 +113,7 @@
 			<p><a href="https://nstuwork.github.io/1/mtf.html">МТФ</a></p>
 			<p><a href="https://nstuwork.github.io/1/ref.html">РЭФ</a></p>
 			<p><a href="https://nstuwork.github.io/1/fb.html">ФБ</a></p>
+			<p><a href="https://nstuwork.github.io/1/fgo.html">ФГО</a></p>
 			<p><a href="https://nstuwork.github.io/1/fla.html">ФЛА</a></p>
 			<p><a href="https://nstuwork.github.io/1/fma.html">ФМА</a></p>
 			<p><a href="https://nstuwork.github.io/1/fpmi.html">ФПМИ</a></p>
