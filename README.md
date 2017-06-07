@@ -108,17 +108,17 @@
  			<div id="window1">
 			<div class="column">
 			<center>
-			<p align="right"><a href="https://nstuwork.github.io/123/avt.html">АВТФ</a></p>
-			<p align="right"><a href="https://nstuwork.github.io/1/istr.html">ИСТР</a></p>
-			<p align="right"><a href="https://nstuwork.github.io/1/mtf.html">МТФ</a></p>
-			<p align="right"><a href="https://nstuwork.github.io/1/ref.html">РЭФ</a></p>
-			<p align="right"><a href="https://nstuwork.github.io/1/fb.html">ФБ</a></p>
-			<p align="right"><a href="https://nstuwork.github.io/1/fla.html">ФЛА</a></p>
-			<p align="left"><a href="https://nstuwork.github.io/1/fma.html">ФМА</a></p>
-			<p align="left"><a href="https://nstuwork.github.io/1/fpmi.html">ФПМИ</a></p>
-			<p align="left"><a href="https://nstuwork.github.io/1/ftf.html">ФТФ</a></p>
-			<p align="left"><a href="https://nstuwork.github.io/1/fen.html">ФЭН</a></p>
-			<p align="left"><a href="https://nstuwork.github.io/1/uf.html">ЮФ</a></p>
+			<p><a href="https://nstuwork.github.io/123/avt.html">АВТФ</a></p>
+			<p><a href="https://nstuwork.github.io/1/istr.html">ИСТР</a></p>
+			<p><a href="https://nstuwork.github.io/1/mtf.html">МТФ</a></p>
+			<p><a href="https://nstuwork.github.io/1/ref.html">РЭФ</a></p>
+			<p><a href="https://nstuwork.github.io/1/fb.html">ФБ</a></p>
+			<p><a href="https://nstuwork.github.io/1/fla.html">ФЛА</a></p>
+			<p><a href="https://nstuwork.github.io/1/fma.html">ФМА</a></p>
+			<p><a href="https://nstuwork.github.io/1/fpmi.html">ФПМИ</a></p>
+			<p><a href="https://nstuwork.github.io/1/ftf.html">ФТФ</a></p>
+			<p><a href="https://nstuwork.github.io/1/fen.html">ФЭН</a></p>
+			<p><a href="https://nstuwork.github.io/1/uf.html">ЮФ</a></p>
 			</center>
 			</div>	
 			</div>
@@ -147,8 +147,8 @@
 			</div>
 			</div>
     <meta charset="utf-8">
-<center><p>Больше мест для практики</p></center>
-	<center><button class="myButton" onclick="show2('none');show1('block')">На других факультетах</button>
-<button class="myButton" onclick="show1('none');show2('block')">В других сферах деятельности</button></center>	
+<center><p>Сортировка компаний для прохождения практики:</p></center>
+	<center><button class="myButton" onclick="show2('none');show1('block')">По факультетам</button>
+<button class="myButton" onclick="show1('none');show2('block')">По сферам деятельности</button></center>	
   </body>
   </html>
