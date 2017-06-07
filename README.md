@@ -2,6 +2,7 @@
  <html>
  <head>
  <meta http-equiv='Content-Type' content='text/html; charset=utf8'>
+  <title>Практика НГТУ</title>
  <style type="text/css">
  	.column {
     -webkit-column-width: 200px;
