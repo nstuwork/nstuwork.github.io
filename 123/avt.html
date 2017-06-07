@@ -1,5 +1,5 @@
-<html>
- <head>
+
+<head>
 	 <center><h1>Места прохождения практики для студентов АВТФ</h1></center>
  <meta http-equiv='Content-Type' content='text/html; charset=utf8'>
 	  <title>Практика АВТФ</title>
@@ -20,7 +20,7 @@
             padding: 10px;
         }
             table tbody tr:hover {
-            background: #ebfaff;
+            background: #B6EEFF;
         }
     </style>
 <body>
@@ -40,10 +40,10 @@
     <!-- Это строка содержит фильтры //-->
     <tr>
         <td>
-           <input id="regexp" />
+           <input id="textin" />
         </td>
         <td>
-		<select><input id="text" />
+		 <select id="text">
                 <option value="">---</option>
                 <option value="АВТ">АВТ</option>
                 <option value="ВТ">ВТ</option>
@@ -313,21 +313,5 @@ filterTable(
         0:document.getElementById("textin"),
  
         /* Фильтр для второго столбца текстовое поле - только точное совпадение: */
-        new filterTable.Filter(document.getElementById("regexp"),
-    /* Коллбэк ф-ция
-        валидации */
-    function (value, filters, i) {
-        var c_value = value.toLowerCase(),
-            f_value = filters[i].value.toLowerCase();
-        return c_value.indexOf(f_value) === 0;
-    },
-    /* Будем вызывать
-        валидацию по событию
-        onkeyup фильтра */
-    "onkeyup"
-)
-);
-
-  </script>
-  </body>
-  </html>
+        1: document.getElementById("text");
+</script>
