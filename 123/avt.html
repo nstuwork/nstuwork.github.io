@@ -40,10 +40,10 @@
     <!-- Это строка содержит фильтры //-->
     <tr>
         <td>
-           <input id="textin" />
+           <input id="regexp" />
         </td>
         <td>
-		 <select id="text">
+		<select><input id="text" />
                 <option value="">---</option>
                 <option value="АВТ">АВТ</option>
                 <option value="ВТ">ВТ</option>
@@ -313,9 +313,21 @@ filterTable(
         0:document.getElementById("textin"),
  
         /* Фильтр для второго столбца текстовое поле - только точное совпадение: */
-        1: document.getElementById("text")
-    }
+        new filterTable.Filter(document.getElementById("regexp"),
+    /* Коллбэк ф-ция
+        валидации */
+    function (value, filters, i) {
+        var c_value = value.toLowerCase(),
+            f_value = filters[i].value.toLowerCase();
+        return c_value.indexOf(f_value) === 0;
+    },
+    /* Будем вызывать
+        валидацию по событию
+        onkeyup фильтра */
+    "onkeyup"
+)
 );
+
   </script>
   </body>
   </html>
