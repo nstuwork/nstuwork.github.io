@@ -40,7 +40,7 @@
     <!-- Это строка содержит фильтры //-->
     <tr>
         <td>
-           <input id="regexp" />
+           <input id="textin" />
         </td>
         <td>
 		 <select id="text">
@@ -310,16 +310,7 @@ filterTable(
     /* Объект-конфигурация фильтров: */
     {
         /* Фильтр для первого столбца чекбоксы: */
-        0: new filterTable.Filter(document.getElementById("regexp"),
-            /* Коллбэк ф-ция валидации */
-            function (value, filters, i) {
-                return value.indexOf(filters[i].value) === 0;
-            },
-            /* Будем вызывать валидацию по событию onkeyup фильтра */
-            "onkeyup"
-        )
-    }
-);
+        0:document.getElementById("textin"),
  
         /* Фильтр для второго столбца текстовое поле - только точное совпадение: */
         1: document.getElementById("text")
