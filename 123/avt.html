@@ -33,10 +33,9 @@
 	<colgroup width="157"></colgroup>
 	    <thead>
     <tr>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>№</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Кафедра</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Организация</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Направление</td>
+        <th>Наименование организации</th>
+        <th>Кафедра</th>
+        <th>Направление</th>
     </tr>
     <!-- Это строка содержит фильтры //-->
     <tr>
@@ -56,304 +55,250 @@
         <td>
             <input id="regexp" />
         </td>
-	<td>
-        <input id="regexp" />
-        </td>
     </tr>
     </thead>
     <!-- А вот на этот элемент нам нужно получить ссылку для передачи в filterTable //-->
     <tbody id="target">
-	<table border='0' cellspacing='0' cellpadding='2' style='border-top:solid 1px #000000; border-left:solid 1px #000000;'>
-<tr>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>1</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>АВТ</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ОАО Улан-Удэнский авиационный завод</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Автоматизация</td>
-</tr>
-<tr>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>2</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ВТ</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'> Государственное научное учреждение Сибирский физико-технический институт аграрных проблем Российской сельскохозяйственной академии</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Вычислительная техника</td>
-</tr>
-<tr>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>3</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ВТ</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>АО Новосибирский механический завод Искра</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Вычислительная техника</td>
-</tr>
-<tr>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>4</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ВТ</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО ГосКомСофт</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Вычислительная техника</td>
-</tr>
-<tr>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>5</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ВТ</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО ДИАЛ групп</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Вычислительная техника</td>
-</tr>
-<tr>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>6</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ВТ</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО Единый расчетный центр-Сибирь</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Вычислительная техника</td>
-</tr>
-<tr>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>7</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ВТ</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО ИТ-ресурс</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Вычислительная техника</td>
-</tr>
-<tr>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>8</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ВТ</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО Новео НСК</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Вычислительная техника</td>
-</tr>
-<tr>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>9</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ВТ</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО Предприятие "Элтекс"</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Вычислительная техника</td>
-</tr>
-<tr>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>10</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ВТ</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ФБУЗ Западно-Сибирский Дорожный филиал "Центр гигиены и эпидемиологии по железнодорожному транспорту"</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Вычислительная техника</td>
-</tr>
-<tr>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>11</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ВТ</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ФБУН Институт вычислительной математики и математической геофизики СО РАН</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Вычислительная техника</td>
-</tr>
-<tr>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>12</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЗИ</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>АО Новосибирский завод полупроводниковых приборов с ОКБ</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Защита информации</td>
-</tr>
-<tr>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>13</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЗИ</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО Аттестационный технический центр</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Защита информации</td>
-</tr>
-<tr>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>14</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЗИ</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО НЗХК – Энергия</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Защита информации</td>
-</tr>
-<tr>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>15</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЗИ</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО Предприятие "Элтекс"</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Защита информации</td>
-</tr>
-<tr>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>16</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЗИ</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО Русская нефритовая компания</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Защита информации</td>
-</tr>
-<tr>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>17</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЗИ</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО Системы информационной безопасности</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Защита информации</td>
-</tr>
-<tr>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>18</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЗИ</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО УК «БФК»</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Защита информации</td>
-</tr>
-<tr>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>19</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЗИ</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ФГУП Научно-технический центр «Атлас»</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Защита информации</td>
-</tr>
-<tr>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>20</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЗИ</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ФГУП Новосибирский научно-технический центр «Научно-производственное предприятие «Гамма»</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Защита информации</td>
-</tr>
-<tr>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>21</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ССОД</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО Лига Роботов</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Системы обработки данных</td>
-</tr>
-<tr>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>22</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ССОД</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО Новео НСК</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Системы обработки данных</td>
-</tr>
-<tr>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>23</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ССОД</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО Техноград Плюс</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Системы обработки данных</td>
-</tr>
-<tr>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>24</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ССОД</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО ЭНИТЕХ</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Системы обработки данных</td>
-</tr>
-<tr>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>25</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ССОД</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ФГУП Сибирский государственныйордена  Трудового Красного Знамени научно-исследовательский институт метрологии</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Системы обработки данных</td>
-</tr>
-<tr>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>26</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЭИ</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>АНО Сибирский центр технической диагностики и экспертизы "Диасиб"</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Экономическая информатика</td>
-</tr>
-<tr>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>27</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЭИ</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>АО Новосибирский авиаремонтный завод</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Экономическая информатика</td>
-</tr>
-<tr>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>28</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЭИ</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ГАОУ ВПО Новосибирский национальный исследовательский государственный университет</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Экономическая информатика</td>
-</tr>
-<tr>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>29</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЭИ</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ОАО Октава</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Экономическая информатика</td>
-</tr>
-<tr>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>30</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЭИ</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ОАО Ривер Парк</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Экономическая информатика</td>
-</tr>
-<tr>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>31</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЭИ</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО Адидас</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Экономическая информатика</td>
-</tr>
-<tr>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>32</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЭИ</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО Ай Ти Констракт</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Экономическая информатика</td>
-</tr>
-<tr>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>33</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЭИ</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО Бургер Рус</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Экономическая информатика</td>
-</tr>
-<tr>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>34</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЭИ</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО ГосКомСофт</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Экономическая информатика</td>
-</tr>
-<tr>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>35</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЭИ</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО ИКЕА ДОМ</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Экономическая информатика</td>
-</tr>
-<tr>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>36</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЭИ</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО Кей Зет</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Экономическая информатика</td>
-</tr>
-<tr>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>37</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЭИ</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО Новосибирск-мебель</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Экономическая информатика</td>
-</tr>
-<tr>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>38</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЭИ</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО НовЭК</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Экономическая информатика</td>
-</tr>
-<tr>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>39</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЭИ</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО Обувь России</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Экономическая информатика</td>
-</tr>
-<tr>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>40</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЭИ</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО Оксфорд</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Экономическая информатика</td>
-</tr>
-<tr>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>41</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЭИ</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО ПСФ Энергомонтажспецстрой</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Экономическая информатика</td>
-</tr>
-<tr>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>42</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЭИ</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО Рич Фэмили</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Экономическая информатика</td>
-</tr>
-<tr>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>43</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЭИ</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО Русская нефритовая компания</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Экономическая информатика</td>
-</tr>
-<tr>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>44</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЭИ</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО СитиКом</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Экономическая информатика</td>
-</tr>
-<tr>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>45</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЭИ</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО Технический центр «СофтМастер»</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Экономическая информатика</td>
-</tr>
-<tr>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>46</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЭИ</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО Эрнст энд Янг</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Экономическая информатика</td>
-</tr>
-<tr>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>47</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЭИ</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ООО 1С-РАРУС Новосибирск</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Экономическая информатика</td>
-</tr>
-<tr>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>48</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ЭИ</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>ФКУ ЦУКС ГУ МЧС России по Новосибирской области</td>
-<td style='border-bottom:solid 1px #000000; border-right:solid 1px #000000;'>Экономическая информатика</td>
-</tr>
-</table>
-
+	<tr>
+		<td height="16" align="left" valign=bottom><font color="#000000">ОАО Улан-Удэнский авиационный завод</font></td>
+		<td align="left" valign=bottom><font color="#000000">АВТ</font></td>
+		<td align="left" valign=bottom><font color="#000000">Автоматизация</font></td>
+	</tr>
+	<tr>
+		<td height="16" align="left" valign=bottom><font color="#000000">Государственное научное учреждение Сибирский физико-технический институт аграрных проблем Российской сельскохозяйственной академии</font></td>
+		<td align="left" valign=bottom><font color="#000000">ВТ</font></td>
+		<td align="left" valign=bottom><font color="#000000">Вычислительная техника</font></td>
+	</tr>
+	<tr>
+		<td height="16" align="left" valign=bottom><font color="#000000">АО Новосибирский механический завод Искра</font></td>
+		<td align="left" valign=bottom><font color="#000000">ВТ</font></td>
+		<td align="left" valign=bottom><font color="#000000">Вычислительная техника</font></td>
+	</tr>
+	<tr>
+		<td height="16" align="left" valign=bottom><font color="#000000">ООО ГосКомСофт</font></td>
+		<td align="left" valign=bottom><font color="#000000">ВТ</font></td>
+		<td align="left" valign=bottom><font color="#000000">Вычислительная техника</font></td>
+	</tr>
+	<tr>
+		<td height="16" align="left" valign=bottom><font color="#000000">ООО ДИАЛ групп</font></td>
+		<td align="left" valign=bottom><font color="#000000">ВТ</font></td>
+		<td align="left" valign=bottom><font color="#000000">Вычислительная техника</font></td>
+	</tr>
+	<tr>
+		<td height="16" align="left" valign=bottom><font color="#000000">ООО Единый расчетный центр-Сибирь</font></td>
+		<td align="left" valign=bottom><font color="#000000">ВТ</font></td>
+		<td align="left" valign=bottom><font color="#000000">Вычислительная техника</font></td>
+	</tr>
+	<tr>
+		<td height="16" align="left" valign=bottom><font color="#000000">ООО ИТ-ресурс</font></td>
+		<td align="left" valign=bottom><font color="#000000">ВТ</font></td>
+		<td align="left" valign=bottom><font color="#000000">Вычислительная техника</font></td>
+	</tr>
+	<tr>
+		<td height="16" align="left" valign=bottom><font color="#000000">ООО Новео НСК</font></td>
+		<td align="left" valign=bottom><font color="#000000">ВТ</font></td>
+		<td align="left" valign=bottom><font color="#000000">Вычислительная техника</font></td>
+	</tr>
+	<tr>
+		<td height="16" align="left" valign=bottom><font color="#000000">ООО Предприятие &quot;Элтекс&quot;</font></td>
+		<td align="left" valign=bottom><font color="#000000">ВТ</font></td>
+		<td align="left" valign=bottom><font color="#000000">Вычислительная техника</font></td>
+	</tr>
+	<tr>
+		<td height="16" align="left" valign=bottom><font color="#000000">ФБУЗ Западно-Сибирский Дорожный филиал &quot;Центр гигиены и эпидемиологии по железнодорожному транспорту&quot;</font></td>
+		<td align="left" valign=bottom><font color="#000000">ВТ</font></td>
+		<td align="left" valign=bottom><font color="#000000">Вычислительная техника</font></td>
+	</tr>
+	<tr>
+		<td height="16" align="left" valign=bottom><font color="#000000">ФБУН Институт вычислительной математики и математической геофизики СО РАН</font></td>
+		<td align="left" valign=bottom><font color="#000000">ВТ</font></td>
+		<td align="left" valign=bottom><font color="#000000">Вычислительная техника</font></td>
+	</tr>
+	<tr>
+		<td height="16" align="left" valign=bottom><font color="#000000">АО Новосибирский завод полупроводниковых приборов с ОКБ</font></td>
+		<td align="left" valign=bottom><font color="#000000">ЗИ</font></td>
+		<td align="left" valign=bottom><font color="#000000">Защита информации</font></td>
+	</tr>
+	<tr>
+		<td height="16" align="left" valign=bottom><font color="#000000">ООО Аттестационный технический центр</font></td>
+		<td align="left" valign=bottom><font color="#000000">ЗИ</font></td>
+		<td align="left" valign=bottom><font color="#000000">Защита информации</font></td>
+	</tr>
+	<tr>
+		<td height="16" align="left" valign=bottom><font color="#000000">ООО НЗХК – Энергия</font></td>
+		<td align="left" valign=bottom><font color="#000000">ЗИ</font></td>
+		<td align="left" valign=bottom><font color="#000000">Защита информации</font></td>
+	</tr>
+	<tr>
+		<td height="16" align="left" valign=bottom><font color="#000000">ООО Предприятие &quot;Элтекс&quot;</font></td>
+		<td align="left" valign=bottom><font color="#000000">ЗИ</font></td>
+		<td align="left" valign=bottom><font color="#000000">Защита информации</font></td>
+	</tr>
+	<tr>
+		<td height="16" align="left" valign=bottom><font color="#000000">ООО Русская нефритовая компания</font></td>
+		<td align="left" valign=bottom><font color="#000000">ЗИ</font></td>
+		<td align="left" valign=bottom><font color="#000000">Защита информации</font></td>
+	</tr>
+	<tr>
+		<td height="16" align="left" valign=bottom><font color="#000000">ООО Системы информационной безопасности</font></td>
+		<td align="left" valign=bottom><font color="#000000">ЗИ</font></td>
+		<td align="left" valign=bottom><font color="#000000">Защита информации</font></td>
+	</tr>
+	<tr>
+		<td height="16" align="left" valign=bottom><font color="#000000">ООО УК «БФК»</font></td>
+		<td align="left" valign=bottom><font color="#000000">ЗИ</font></td>
+		<td align="left" valign=bottom><font color="#000000">Защита информации</font></td>
+	</tr>
+	<tr>
+		<td height="16" align="left" valign=bottom><font color="#000000">ФГУП Научно-технический центр «Атлас»</font></td>
+		<td align="left" valign=bottom><font color="#000000">ЗИ</font></td>
+		<td align="left" valign=bottom><font color="#000000">Защита информации</font></td>
+	</tr>
+	<tr>
+		<td height="16" align="left" valign=bottom><font color="#000000">ФГУП Новосибирский научно-технический центр «Научно-производственное предприятие «Гамма»</font></td>
+		<td align="left" valign=bottom><font color="#000000">ЗИ</font></td>
+		<td align="left" valign=bottom><font color="#000000">Защита информации</font></td>
+	</tr>
+	<tr>
+		<td height="16" align="left" valign=bottom><font color="#000000">ООО Лига Роботов</font></td>
+		<td align="left" valign=bottom><font color="#000000">ССОД</font></td>
+		<td align="left" valign=bottom><font color="#000000">Системы обработки данных</font></td>
+	</tr>
+	<tr>
+		<td height="16" align="left" valign=bottom><font color="#000000">ООО Новео НСК</font></td>
+		<td align="left" valign=bottom><font color="#000000">ССОД</font></td>
+		<td align="left" valign=bottom><font color="#000000">Системы обработки данных</font></td>
+	</tr>
+	<tr>
+		<td height="16" align="left" valign=bottom><font color="#000000">ООО Техноград Плюс</font></td>
+		<td align="left" valign=bottom><font color="#000000">ССОД</font></td>
+		<td align="left" valign=bottom><font color="#000000">Системы обработки данных</font></td>
+	</tr>
+	<tr>
+		<td height="16" align="left" valign=bottom><font color="#000000">ООО ЭНИТЕХ</font></td>
+		<td align="left" valign=bottom><font color="#000000">ССОД</font></td>
+		<td align="left" valign=bottom><font color="#000000">Системы обработки данных</font></td>
+	</tr>
+	<tr>
+		<td height="16" align="left" valign=bottom><font color="#000000">ФГУП Сибирский государственныйордена  Трудового Красного Знамени научно-исследовательский институт метрологии</font></td>
+		<td align="left" valign=bottom><font color="#000000">ССОД</font></td>
+		<td align="left" valign=bottom><font color="#000000">Системы обработки данных</font></td>
+	</tr>
+	<tr>
+		<td height="16" align="left" valign=bottom><font color="#000000">АНО Сибирский центр технической диагностики и экспертизы &quot;Диасиб&quot;</font></td>
+		<td align="left" valign=bottom><font color="#000000">ЭИ</font></td>
+		<td align="left" valign=bottom><font color="#000000">Экономическая информатика</font></td>
+	</tr>
+	<tr>
+		<td height="16" align="left" valign=bottom><font color="#000000">АО Новосибирский авиаремонтный завод</font></td>
+		<td align="left" valign=bottom><font color="#000000">ЭИ</font></td>
+		<td align="left" valign=bottom><font color="#000000">Экономическая информатика</font></td>
+	</tr>
+	<tr>
+		<td height="16" align="left" valign=bottom><font color="#000000">ГАОУ ВПО Новосибирский национальный исследовательский государственный университет</font></td>
+		<td align="left" valign=bottom><font color="#000000">ЭИ</font></td>
+		<td align="left" valign=bottom><font color="#000000">Экономическая информатика</font></td>
+	</tr>
+	<tr>
+		<td height="16" align="left" valign=bottom><font color="#000000">ОАО Октава</font></td>
+		<td align="left" valign=bottom><font color="#000000">ЭИ</font></td>
+		<td align="left" valign=bottom><font color="#000000">Экономическая информатика</font></td>
+	</tr>
+	<tr>
+		<td height="16" align="left" valign=bottom><font color="#000000">ОАО Ривер Парк</font></td>
+		<td align="left" valign=bottom><font color="#000000">ЭИ</font></td>
+		<td align="left" valign=bottom><font color="#000000">Экономическая информатика</font></td>
+	</tr>
+	<tr>
+		<td height="16" align="left" valign=bottom><font color="#000000">ООО Адидас</font></td>
+		<td align="left" valign=bottom><font color="#000000">ЭИ</font></td>
+		<td align="left" valign=bottom><font color="#000000">Экономическая информатика</font></td>
+	</tr>
+	<tr>
+		<td height="16" align="left" valign=bottom><font color="#000000">ООО Ай Ти Констракт</font></td>
+		<td align="left" valign=bottom><font color="#000000">ЭИ</font></td>
+		<td align="left" valign=bottom><font color="#000000">Экономическая информатика</font></td>
+	</tr>
+	<tr>
+		<td height="16" align="left" valign=bottom><font color="#000000">ООО Бургер Рус</font></td>
+		<td align="left" valign=bottom><font color="#000000">ЭИ</font></td>
+		<td align="left" valign=bottom><font color="#000000">Экономическая информатика</font></td>
+	</tr>
+	<tr>
+		<td height="16" align="left" valign=bottom><font color="#000000">ООО ГосКомСофт</font></td>
+		<td align="left" valign=bottom><font color="#000000">ЭИ</font></td>
+		<td align="left" valign=bottom><font color="#000000">Экономическая информатика</font></td>
+	</tr>
+	<tr>
+		<td height="16" align="left" valign=bottom><font color="#000000">ООО ИКЕА ДОМ</font></td>
+		<td align="left" valign=bottom><font color="#000000">ЭИ</font></td>
+		<td align="left" valign=bottom><font color="#000000">Экономическая информатика</font></td>
+	</tr>
+	<tr>
+		<td height="16" align="left" valign=bottom><font color="#000000">ООО Кей Зет</font></td>
+		<td align="left" valign=bottom><font color="#000000">ЭИ</font></td>
+		<td align="left" valign=bottom><font color="#000000">Экономическая информатика</font></td>
+	</tr>
+	<tr>
+		<td height="16" align="left" valign=bottom><font color="#000000">ООО Новосибирск-мебель</font></td>
+		<td align="left" valign=bottom><font color="#000000">ЭИ</font></td>
+		<td align="left" valign=bottom><font color="#000000">Экономическая информатика</font></td>
+	</tr>
+	<tr>
+		<td height="16" align="left" valign=bottom><font color="#000000">ООО НовЭК</font></td>
+		<td align="left" valign=bottom><font color="#000000">ЭИ</font></td>
+		<td align="left" valign=bottom><font color="#000000">Экономическая информатика</font></td>
+	</tr>
+	<tr>
+		<td height="16" align="left" valign=bottom><font color="#000000">ООО Обувь России</font></td>
+		<td align="left" valign=bottom><font color="#000000">ЭИ</font></td>
+		<td align="left" valign=bottom><font color="#000000">Экономическая информатика</font></td>
+	</tr>
+	<tr>
+		<td height="16" align="left" valign=bottom><font color="#000000">ООО Оксфорд</font></td>
+		<td align="left" valign=bottom><font color="#000000">ЭИ</font></td>
+		<td align="left" valign=bottom><font color="#000000">Экономическая информатика</font></td>
+	</tr>
+	<tr>
+		<td height="16" align="left" valign=bottom><font color="#000000">ООО ПСФ Энергомонтажспецстрой</font></td>
+		<td align="left" valign=bottom><font color="#000000">ЭИ</font></td>
+		<td align="left" valign=bottom><font color="#000000">Экономическая информатика</font></td>
+	</tr>
+	<tr>
+		<td height="16" align="left" valign=bottom><font color="#000000">ООО Рич Фэмили</font></td>
+		<td align="left" valign=bottom><font color="#000000">ЭИ</font></td>
+		<td align="left" valign=bottom><font color="#000000">Экономическая информатика</font></td>
+	</tr>
+	<tr>
+		<td height="16" align="left" valign=bottom><font color="#000000">ООО Русская нефритовая компания</font></td>
+		<td align="left" valign=bottom><font color="#000000">ЭИ</font></td>
+		<td align="left" valign=bottom><font color="#000000">Экономическая информатика</font></td>
+	</tr>
+	<tr>
+		<td height="16" align="left" valign=bottom><font color="#000000">ООО СитиКом</font></td>
+		<td align="left" valign=bottom><font color="#000000">ЭИ</font></td>
+		<td align="left" valign=bottom><font color="#000000">Экономическая информатика</font></td>
+	</tr>
+	<tr>
+		<td height="16" align="left" valign=bottom><font color="#000000">ООО Технический центр «СофтМастер»</font></td>
+		<td align="left" valign=bottom><font color="#000000">ЭИ</font></td>
+		<td align="left" valign=bottom><font color="#000000">Экономическая информатика</font></td>
+	</tr>
+	<tr>
+		<td height="16" align="left" valign=bottom><font color="#000000">ООО Эрнст энд Янг</font></td>
+		<td align="left" valign=bottom><font color="#000000">ЭИ</font></td>
+		<td align="left" valign=bottom><font color="#000000">Экономическая информатика</font></td>
+	</tr>
+	<tr>
+		<td height="16" align="left" valign=bottom><font color="#000000">ООО 1С-РАРУС Новосибирск</font></td>
+		<td align="left" valign=bottom><font color="#000000">ЭИ</font></td>
+		<td align="left" valign=bottom><font color="#000000">Экономическая информатика</font></td>
+	</tr>
+	<tr>
+		<td height="16" align="left" valign=bottom><font color="#000000">ФКУ ЦУКС ГУ МЧС России по Новосибирской области</font></td>
+		<td align="left" valign=bottom><font color="#000000">ЭИ</font></td>
+		<td align="left" valign=bottom><font color="#000000">Экономическая информатика</font></td>
+	</tr>
 </tbody>
 </table>
 	 <script src="https://nstuwork.github.io/filterTable.v1.0.min.js"></script>
