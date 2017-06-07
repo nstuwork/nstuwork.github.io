@@ -54,14 +54,14 @@
  	}
 	
  	#window1{
- 		width: 717px;
+ 		width: 250px;
  		height: 700px;
  		margin: 120px auto;
  		display: none;
  		background: #deffc4;
  		z-index: 200;
  		position: fixed;
- 		left: 0;
+ 		left: 50;
  		right: 0;
  		top: 0;
  		bottom: 0;
@@ -69,7 +69,7 @@
  	}
  	
 	#window2{
- 		width: 717px;
+ 		width: 250px;
  		height: 700px;
  		margin: 120px auto;
  		display: none;
@@ -77,25 +77,42 @@
  		z-index: 200;
  		position: fixed;
  		left: 0;
- 		right: 0;
+ 		right: 50;
  		top: 0;
  		bottom: 0;
  		padding: 16px;
  	}
 	
 	#window3{
- 		width: 400px;
- 		height: 400px;
- 		margin: 150px auto;
+ 		width: 250px;
+ 		height: 700px;
+ 		margin: 120px auto;
  		display: none;
- 		background: blue;
+ 		background: #deffc4;
  		z-index: 200;
  		position: fixed;
- 		left: 0;
+ 		left: 50;
  		right: 0;
  		top: 0;
  		bottom: 0;
  		padding: 16px;
+ 	}
+ 	
+	#window4{
+ 		width: 250px;
+ 		height: 700px;
+ 		margin: 120px auto;
+ 		display: none;
+ 		background: #deffc4;
+ 		z-index: 200;
+ 		position: fixed;
+ 		left: 0;
+ 		right: 50;
+ 		top: 0;
+ 		bottom: 0;
+ 		padding: 16px;
+ 	}
+	 
  	}
 		.close{
  		margin-left: 647px;
@@ -112,38 +129,42 @@
  					//Функция показа
  			function show1(state){
  
- 					document.getElementById('window1').style.display = state;					
+ 					document.getElementById('window1').style.display = state;
+					document.getElementById('window2').style.display = state;
  			}
 			function show2(state){
  
- 					document.getElementById('window2').style.display = state;					
- 			}
-			function show3(state){
- 
- 					document.getElementById('window3').style.display = state;					
+ 					document.getElementById('window3').style.display = state;	
+					document.getElementById('window4').style.display = state;				
  			}
  			
  		</script>
  			<div id="window1">
 			<div class="column">
-			<center>
+			<left>
 			<p><a href="https://nstuwork.github.io/123/avtf.html">АВТФ</a></p>
 			<p>ИСТР</p>
 			<p>МТФ</p>
 			<p>РЭФ</p>
 			<p>ФБ</p>
 			<p>ФЛА</p>
+			</left>
+			</div>	
+			
+			<div id="window2">
+			<div class="column">
+			<right>
 			<p>ФМА</p>
 			<p>ФПМИ</p>
 			<p>ФТФ</p>
 			<p>ФЭН</p>
 			<p>ЮФ</p>
-			</center>
-			</div>	
+			</right>
 			</div>
-			<div id="window2">
+				
+			<div id="window3">
 			<div class="column">
-			<center>
+			<left>
 			<p><a href="https://nstuwork.github.io/123/it.html">ИТ</a></p>
 			<p>Иностранные языки</p>
 			<p>Маркетинг</p>
@@ -153,6 +174,12 @@
 			<p>Психология и педогогика</p>
 			<p>Работа в социальной сфере</p>
 			<p>Радиотехника и электроника</p>
+			</left>
+			</div>
+				
+			<div id="window4">
+			<div class="column">
+			<right>
 			<p>Регионоведение</p>
 			<p>Самолето- и вертолетостроение</p>
 			<p>Системы упрвления, боеприпасы и взрыватели (ФЛА)</p>
@@ -162,8 +189,7 @@
 			<p>Электротехнологические установки</p>
 			<p>Электроэнергетика и теплоэнергетика</p>
 			<p>Юриспруденция</p>
-			</center>
-			</div>
+			</right>
 			</div>
     <meta charset="utf-8">
 <center><p>Больше мест для практики!</p></center>
