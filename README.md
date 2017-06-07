@@ -147,8 +147,8 @@
 			</div>
 			</div>
     <meta charset="utf-8">
-<center><p>Выберите тип сортировки компаний:</p></center>
-	<center><button class="myButton" onclick="show2('none');show1('block')">По наименованию факультета</button>
-<button class="myButton" onclick="show1('none');show2('block')">По сфере деятельности предоставления практики</button></center>	
+<center><p>Больше мест для практики</p></center>
+	<center><button class="myButton" onclick="show2('none');show1('block')">На других факультетах</button>
+<button class="myButton" onclick="show1('none');show2('block')">В других сферах деятельности</button></center>	
   </body>
   </html>
