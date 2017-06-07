@@ -125,7 +125,7 @@
 			<div id="window2">
 			<div class="column">
 			<center>
-			<p align="right"><a href="https://nstuwork.github.io/2/it.html">ИТ</a></p>
+			<p><a href="https://nstuwork.github.io/2/it.html">ИТ</a></p>
 			<p>Иностранные языки</p>
 			<p>Маркетинг</p>
 			<p>Материаловедение</p>
