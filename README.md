@@ -108,24 +108,24 @@
  			<div id="window1">
 			<div class="column">
 			<center>
-			<p><a href="https://nstuwork.github.io/123/avtf.html">АВТФ</a></p>
-			<p>ИСТР</p>
-			<p>МТФ</p>
-			<p>РЭФ</p>
-			<p>ФБ</p>
-			<p>ФЛА</p>
-			<p>ФМА</p>
-			<p>ФПМИ</p>
-			<p>ФТФ</p>
-			<p>ФЭН</p>
-			<p>ЮФ</p>
+			<p align="right"><a href="https://nstuwork.github.io/123/avt.html">АВТФ</a></p>
+			<p align="right"><a href="https://nstuwork.github.io/1/istr.html">ИСТР</a></p>
+			<p align="right"><a href="https://nstuwork.github.io/1/mtf.html">МТФ</a></p>
+			<p align="right"><a href="https://nstuwork.github.io/1/ref.html">РЭФ</a></p>
+			<p align="right"><a href="https://nstuwork.github.io/1/fb.html">ФБ</a></p>
+			<p align="right"><a href="https://nstuwork.github.io/1/fla.html">ФЛА</a></p>
+			<p align="left"><a href="https://nstuwork.github.io/1/fma.html">ФМА</a></p>
+			<p align="left"><a href="https://nstuwork.github.io/1/fpmi.html">ФПМИ</a></p>
+			<p align="left"><a href="https://nstuwork.github.io/1/ftf.html">ФТФ</a></p>
+			<p align="left"><a href="https://nstuwork.github.io/1/fen.html">ФЭН</a></p>
+			<p align="left"><a href="https://nstuwork.github.io/1/uf.html">ЮФ</a></p>
 			</center>
 			</div>	
 			</div>
 			<div id="window2">
 			<div class="column">
 			<center>
-			<p><a href="https://nstuwork.github.io/123/it.html">ИТ</a></p>
+			<p align="right"><a href="https://nstuwork.github.io/2/it.html">ИТ</a></p>
 			<p>Иностранные языки</p>
 			<p>Маркетинг</p>
 			<p>Материаловедение</p>
